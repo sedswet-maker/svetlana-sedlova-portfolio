@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Квиз — Светлана Седлова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=landing-gap-2" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="pill pill--black header__about" href="index.html">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+              <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black header__cv" href="cv.html">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+            <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main case-page case-page--quiz">
+        <section class="case-hero">
+          <div class="case-page__inner case-hero__inner">
+            <img
+              class="case-hero__logo"
+              src="assets/logos/yandex-direct-white.svg"
+              width="256"
+              height="36"
+              alt="Яндекс Директ"
+            />
+            <h1 class="case-hero__title">Квиз</h1>
+            <ul class="case-hero__tags">
+              <li>лендинг</li>
+              <li>дизайн</li>
+              <li>геймификация</li>
+              <li>артдирекшен</li>
+              <li>ai-графика</li>
+              <li>дизайн-ревью</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-about">
+          <div class="case-page__inner case-about__inner">
+            <div class="case-about__block">
+              <h2 class="case-about__title">О проекте</h2>
+              <p class="case-about__text">
+                Для&nbsp;активации аудитории и&nbsp;увеличения количества
+                регистраций и&nbsp;запусков продвижения в&nbsp;Директе
+                был&nbsp;создан квиз, где&nbsp;пользователи по&nbsp;итогу
+                прохождения квиза получают промокоды от&nbsp;Директа
+                и&nbsp;Путешествий.
+              </p>
+            </div>
+            <div class="case-about__block">
+              <h2 class="case-about__title">Моя роль</h2>
+              <p class="case-about__text">
+                Создание концепции, структуры лендинга и&nbsp;механики, дизайн
+                и&nbsp;арт-дирекшен. Работа в&nbsp;паре с&nbsp;3D-дизайнером
+                и&nbsp;моушен-дизайнером. Подготовка и&nbsp;передача
+                в&nbsp;разработку, проведение тестирования и&nbsp;дизайн-ревью.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-work">
+          <div class="case-page__inner">
+            <div class="case-work__head">
+              <h2 class="case-work__title">Лендинг</h2>
+              <div class="case-work__chips" role="tablist" aria-label="Экраны квиза">
+                <button
+                  class="case-work__chip case-work__chip--active"
+                  type="button"
+                  role="tab"
+                  id="tab-main"
+                  aria-selected="true"
+                  aria-controls="panel-main"
+                  data-tab="main"
+                >
+                  Главная
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-q1"
+                  aria-selected="false"
+                  aria-controls="panel-q1"
+                  data-tab="q1"
+                  tabindex="-1"
+                >
+                  Вопрос 1
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-q2"
+                  aria-selected="false"
+                  aria-controls="panel-q2"
+                  data-tab="q2"
+                  tabindex="-1"
+                >
+                  Вопрос 2
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-q3"
+                  aria-selected="false"
+                  aria-controls="panel-q3"
+                  data-tab="q3"
+                  tabindex="-1"
+                >
+                  Вопрос 3
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-final"
+                  aria-selected="false"
+                  aria-controls="panel-final"
+                  data-tab="final"
+                  tabindex="-1"
+                >
+                  Финал
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel is-active"
+              id="panel-main"
+              role="tabpanel"
+              aria-labelledby="tab-main"
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Для&nbsp;квиза была выбрана простая и&nbsp;понятная концепция
+                    про&nbsp;«отдых», так&nbsp;как это конец&nbsp;года,
+                    а&nbsp;впереди новогодние каникулы, и&nbsp;многие
+                    предприниматели планируют взять пару&nbsp;дней передышки.
+                    В&nbsp;этом проекте было соединено два&nbsp;стиля —
+                    Директа и&nbsp;Путешествий, и&nbsp;был придуман весёлый
+                    визуал. А&nbsp;дальше мы&nbsp;предлагаем пользователю пройти
+                    чек-ап новогоднего настроения
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://yandex.ru/project/direct/otpusk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups">
+                <div class="case-mockups__desktop case-mockups__frame">
+                  <img
+                    src="assets/cases/quiz/main-desktop-1x.png?v=5"
+                    srcset="assets/cases/quiz/main-desktop-1x.png?v=5 945w, assets/cases/quiz/main-desktop.png?v=5 1890w"
+                    sizes="(max-width: 640px) 100vw, 945px"
+                    width="945"
+                    height="2065"
+                    alt="Квиз Яндекс Директа — главная, десктопная версия"
+                  />
+                </div>
+                <div class="case-mockups__mobile case-mockups__frame">
+                  <img
+                    src="assets/cases/quiz/main-mobile-1x.png?v=5"
+                    srcset="assets/cases/quiz/main-mobile-1x.png?v=5 236w, assets/cases/quiz/main-mobile.png?v=5 472w"
+                    sizes="(max-width: 640px) 60vw, 237px"
+                    width="236"
+                    height="2705"
+                    alt="Квиз Яндекс Директа — главная, мобильная версия"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-q1"
+              role="tabpanel"
+              aria-labelledby="tab-q1"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    В&nbsp;первом вопросе пользователь выбирает на&nbsp;сколько
+                    он «задолбался» и&nbsp;его встречают милые уютные существа,
+                    ведь предприниматели они такие =)
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://yandex.ru/project/direct/otpusk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/quiz/q1-01.png?v=6"
+                  srcset="assets/cases/quiz/q1-01.png?v=6 1260w, assets/cases/quiz/q1-01-2x.png?v=6 2520w"
+                  sizes="(max-width: 640px) 100vw, 1260px"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 1 квиза — состояние 1, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/q1-02.png?v=6"
+                  srcset="assets/cases/quiz/q1-02.png?v=6 1260w, assets/cases/quiz/q1-02-2x.png?v=6 2520w"
+                  sizes="(max-width: 640px) 100vw, 1260px"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 1 квиза — состояние 2, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/q1-03.png?v=6"
+                  srcset="assets/cases/quiz/q1-03.png?v=6 1260w, assets/cases/quiz/q1-03-2x.png?v=6 2520w"
+                  sizes="(max-width: 640px) 100vw, 1260px"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 1 квиза — состояние 3, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/q1-04.png?v=6"
+                  srcset="assets/cases/quiz/q1-04.png?v=6 1260w, assets/cases/quiz/q1-04-2x.png?v=6 2520w"
+                  sizes="(max-width: 640px) 100vw, 1260px"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 1 квиза — состояние 4, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/q1-05.png?v=6"
+                  srcset="assets/cases/quiz/q1-05.png?v=6 1260w, assets/cases/quiz/q1-05-2x.png?v=6 2520w"
+                  sizes="(max-width: 640px) 100vw, 1260px"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 1 квиза — состояние 5, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-q2"
+              role="tabpanel"
+              aria-labelledby="tab-q2"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Во&nbsp;втором вопросе мы&nbsp;предлагаем пользователю
+                    проассоцировать свои желания с&nbsp;картинками
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://yandex.ru/project/direct/otpusk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/quiz/q2-01.png?v=3"
+                  srcset="assets/cases/quiz/q2-01.png?v=3 1260w, assets/cases/quiz/q2-01-2x.png?v=3 2520w"
+                  sizes="(max-width: 640px) 100vw, 1260px"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 2 квиза — дефолтное состояние, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/q2-02.png?v=3"
+                  srcset="assets/cases/quiz/q2-02.png?v=3 1260w, assets/cases/quiz/q2-02-2x.png?v=3 2520w"
+                  sizes="(max-width: 640px) 100vw, 1260px"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 2 квиза — выбранный ответ, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-q3"
+              role="tabpanel"
+              aria-labelledby="tab-q3"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    В&nbsp;третьем вопросе узнаём, хочет&nbsp;ли предприниматель
+                    следить за&nbsp;Директом пока он в&nbsp;отпуске
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://yandex.ru/project/direct/otpusk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/quiz/q3-01.png"
+                  width="1260"
+                  height="603"
+                  alt="Вопрос 3 квиза — десктоп и мобильная версии"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-final"
+              role="tabpanel"
+              aria-labelledby="tab-final"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    И&nbsp;в&nbsp;финале предприниматель узнаёт, какой тип отдыха
+                    ему бы точно сейчас не&nbsp;помешал, и&nbsp;получает
+                    заветные промокоды на&nbsp;продвижение в&nbsp;Директе
+                    и&nbsp;бронирование отелей в&nbsp;Путешествиях
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://yandex.ru/project/direct/otpusk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/quiz/final-01.png?v=5"
+                  width="1260"
+                  height="603"
+                  alt="Финал квиза — результат «пляжный предприниматель», десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/final-02.png?v=5"
+                  width="1260"
+                  height="603"
+                  alt="Финал квиза — вариант результата 2, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/final-03.png?v=5"
+                  width="1260"
+                  height="603"
+                  alt="Финал квиза — вариант результата 3, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+                <img
+                  src="assets/cases/quiz/final-04.png?v=5"
+                  width="1260"
+                  height="603"
+                  alt="Финал квиза — вариант результата 4, десктоп и мобильная версии"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Финальный вид квиза</h3>
+                <div class="case-mockups-stack">
+                  <div class="case-mockups__frame">
+                    <img
+                      src="assets/cases/quiz/final-long.png?v=5"
+                      width="1260"
+                      height="2815"
+                      alt="Финальный вид квиза — полный лендинг, десктоп и мобильная версии"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=quiz-mobile-1"></script>
+  </body>
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV — Светлана Седлова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=header-compact-1" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="pill pill--black header__about" href="index.html">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+              <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black pill--active header__cv" href="cv.html" aria-current="page">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+            <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main cv">
+        <section class="hero cv-hero" id="cv-about">
+          <div class="hero__profile">
+            <div class="hero__photo">
+              <img
+                src="assets/hero-photo.png"
+                width="180"
+                height="180"
+                alt="Светлана Седлова"
+              />
+            </div>
+            <div class="hero__text">
+              <h1 class="hero__title">Светлана Седлова</h1>
+              <p class="hero__subtitle">
+                коммуникационный дизайн |<br />ui/ux | веб-дизайн
+              </p>
+              <p class="hero__meta">34 года, Москва</p>
+            </div>
+          </div>
+          <div class="hero__contacts">
+            <a
+              class="hero__contact"
+              href="https://t.me/Svetlana_Sed"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icon-telegram-hero.svg" width="18" height="18" alt="" />
+              <span>Svetlana_Sed</span>
+            </a>
+            <button
+              class="hero__contact"
+              type="button"
+              data-copy="swet.sed@yandex.ru"
+              aria-label="Скопировать почту"
+            >
+              <img src="assets/icon-email-hero.svg" width="18" height="18" alt="" />
+              <span>swet.sed@yandex.ru</span>
+            </button>
+            <button
+              class="hero__contact"
+              type="button"
+              data-copy="+7 985 167 27 76"
+              aria-label="Скопировать телефон"
+            >
+              <img src="assets/icon-phone-hero.svg" width="18" height="18" alt="" />
+              <span>+7 985 167 27 76</span>
+            </button>
+          </div>
+        </section>
+
+        <div class="cv-resume">
+        <section class="cv-section cv-section--education" id="education">
+          <hr class="cv-divider" />
+          <div class="cv-section__sticky">
+            <h2 class="cv-section__title">Образование</h2>
+          </div>
+          <ul class="cv-rows">
+            <li class="cv-row">
+              <span class="cv-row__year">2018 — 2020</span>
+              <div class="cv-row__text">
+                <p class="cv-row__title">Коммуникационный дизайн (магистратура)</p>
+                <p class="cv-row__subtitle">Школа дизайна НИУ ВШЭ</p>
+              </div>
+            </li>
+            <li class="cv-row">
+              <span class="cv-row__year">2012 — 2016</span>
+              <div class="cv-row__text">
+                <p class="cv-row__title">Художественно-промышленная керамика (бакалавриат)</p>
+                <p class="cv-row__subtitle">МГХПА им.&nbsp;С.&nbsp;Г. Строганова</p>
+              </div>
+            </li>
+            <li class="cv-row">
+              <span class="cv-row__year">2009 — 2012</span>
+              <div class="cv-row__text">
+                <p class="cv-row__title">Дизайн полиграфии (колледж)</p>
+                <p class="cv-row__subtitle">МИПК им.&nbsp;И.&nbsp;Федорова</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="cv-section cv-section--experience" id="experience">
+          <hr class="cv-divider" />
+          <div class="cv-section__sticky">
+            <div class="cv-section__head">
+              <h2 class="cv-section__title">Опыт работы:</h2>
+              <span class="cv-section__note">более&nbsp;8&nbsp;лет</span>
+            </div>
+          </div>
+          <ul class="cv-rows">
+            <li class="cv-row cv-row--experience">
+              <button
+                class="cv-row__top cv-row__header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exp-yandex"
+              >
+                <div class="cv-row__main">
+                  <span class="cv-row__year">2025 — 2026</span>
+                  <div class="cv-row__text">
+                    <p class="cv-row__title">
+                      Старший коммуникационный дизайнер&nbsp;/&nbsp;Веб-дизайнер
+                    </p>
+                    <p class="cv-row__subtitle">Яндекс</p>
+                  </div>
+                </div>
+                <span class="cv-row__toggle" aria-hidden="true">
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--default"
+                    src="assets/icon-plus.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--filled"
+                    src="assets/icon-plus-filled.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                </span>
+              </button>
+              <div class="cv-row__panel" id="exp-yandex" aria-hidden="true">
+                <div class="cv-row__panel-inner">
+                  <div class="cv-row__panel-content">
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">Что делала</h3>
+                      <p class="cv-row__panel-text">
+                        Отвечала за&nbsp;веб-направление в&nbsp;Рекламных сервисах
+                        Яндекса, а&nbsp;именно: Директ, KIT, Бизнес, Рекламная сеть
+                        Яндекса, Яндекс&nbsp;Товары, Портал Рекламы.
+                      </p>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Подробнее об&nbsp;обязанностях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Создание посадочных страниц для&nbsp;сервисов</li>
+                        <li>Создание лендингов под&nbsp;спец-проекты</li>
+                        <li>Поддержка и&nbsp;наполнение сайта Портала Рекламы</li>
+                        <li>Поддержка дизайн-системы</li>
+                        <li>
+                          Редизайн дизайн-системы в&nbsp;рамках обновления стиля
+                          Рекламы
+                        </li>
+                        <li>Создание прототипов в&nbsp;нейросетях</li>
+                        <li>Создание графики в&nbsp;нейросетях</li>
+                        <li>Арт-дирекшен дизайнеров на&nbsp;аутстаффе</li>
+                        <li>Дизайн-ревью верстальщиков</li>
+                        <li>Создание брифов под&nbsp;задачи</li>
+                        <li>Выстраивание процессов со&nbsp;смежными командами</li>
+                      </ul>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Работала в&nbsp;программах и&nbsp;нейросетях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Figma</li>
+                        <li>Claude Code</li>
+                        <li>Cursor</li>
+                        <li>Nano Banana</li>
+                        <li>Krea</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cv-row cv-row--experience">
+              <button
+                class="cv-row__top cv-row__header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exp-megamarket"
+              >
+                <div class="cv-row__main">
+                  <span class="cv-row__year">2022 — 2025</span>
+                  <div class="cv-row__text">
+                    <p class="cv-row__title">
+                      Старший коммуникационный дизайнер&nbsp;/&nbsp;Веб-дизайнер
+                    </p>
+                    <p class="cv-row__subtitle">Мегамаркет</p>
+                  </div>
+                </div>
+                <span class="cv-row__toggle" aria-hidden="true">
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--default"
+                    src="assets/icon-plus.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--filled"
+                    src="assets/icon-plus-filled.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                </span>
+              </button>
+              <div class="cv-row__panel" id="exp-megamarket" aria-hidden="true">
+                <div class="cv-row__panel-inner">
+                  <div class="cv-row__panel-content">
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">Что делала</h3>
+                      <p class="cv-row__panel-text">
+                        Вела такие проекты, как:&nbsp;Услуги и&nbsp;цифровые товары,
+                        Доставка от&nbsp;2 часов, раздел SEO-статей, система
+                        email-рассылок для&nbsp;B2B и&nbsp;B2C.
+                      </p>
+                      <p class="cv-row__panel-text">
+                        Создавала продуктовые лендинги: подключение
+                        к&nbsp;программе лояльности СберСпасибо, подключение
+                        мерчантов к&nbsp;новой торговой площадке, страница
+                        безопасности.
+                      </p>
+                      <p class="cv-row__panel-text">
+                        Работала с&nbsp;промо, участвовала в&nbsp;федеральных
+                        кампаниях.
+                      </p>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Подробнее об&nbsp;обязанностях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Работа с&nbsp;digital-форматами</li>
+                        <li>Создание креативных концепций</li>
+                        <li>Отрисовка графики</li>
+                        <li>Создание гайдов и&nbsp;шаблонов</li>
+                        <li>
+                          Подготовка креативов и&nbsp;макетов для&nbsp;сайта
+                          маркетплейса, рекламных площадок и&nbsp;соцсетей
+                        </li>
+                        <li>Создание лендингов, баннеров, email-рассылок</li>
+                        <li>Ревью дизайнеров в&nbsp;штате и&nbsp;на аутсорсе</li>
+                        <li>Дизайн-ревью верстальщиков</li>
+                        <li>Создание брифов под&nbsp;задачи</li>
+                      </ul>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Работала в&nbsp;программах и&nbsp;нейросетях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cv-row cv-row--experience">
+              <button
+                class="cv-row__top cv-row__header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exp-practicum"
+              >
+                <div class="cv-row__main">
+                  <span class="cv-row__year">2022 — 2023</span>
+                  <div class="cv-row__text">
+                    <p class="cv-row__title">Преподаватель и&nbsp;ревьюер</p>
+                    <p class="cv-row__subtitle">Яндекс Практикум</p>
+                  </div>
+                </div>
+                <span class="cv-row__toggle" aria-hidden="true">
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--default"
+                    src="assets/icon-plus.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--filled"
+                    src="assets/icon-plus-filled.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                </span>
+              </button>
+              <div class="cv-row__panel" id="exp-practicum" aria-hidden="true">
+                <div class="cv-row__panel-inner">
+                  <div class="cv-row__panel-content">
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">Что делала</h3>
+                      <p class="cv-row__panel-text">
+                        Преподавала на&nbsp;курсе «Графический дизайнер».
+                        Проводила ревью на&nbsp;курсе «Графический дизайнер»
+                        и&nbsp;«Коммуникационный дизайнер».
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cv-row cv-row--experience">
+              <button
+                class="cv-row__top cv-row__header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exp-citilink"
+              >
+                <div class="cv-row__main">
+                  <span class="cv-row__year">2021 — 2022</span>
+                  <div class="cv-row__text">
+                    <p class="cv-row__title">Графический дизайнер</p>
+                    <p class="cv-row__subtitle">Ситилинк</p>
+                  </div>
+                </div>
+                <span class="cv-row__toggle" aria-hidden="true">
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--default"
+                    src="assets/icon-plus.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--filled"
+                    src="assets/icon-plus-filled.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                </span>
+              </button>
+              <div class="cv-row__panel" id="exp-citilink" aria-hidden="true">
+                <div class="cv-row__panel-inner">
+                  <div class="cv-row__panel-content">
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">Что делала</h3>
+                      <p class="cv-row__panel-text">
+                        Создавала и&nbsp;вела email-рассылки по&nbsp;нескольким
+                        направлениям: Акции Ситилинк, Вендорские, Журнал
+                        Ситилинк, Программа лояльности, Триггеры.
+                      </p>
+                      <p class="cv-row__panel-text">
+                        Готовила креативы для&nbsp;сайта Ситилинк Журнал.
+                      </p>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Подробнее об&nbsp;обязанностях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Работа с&nbsp;digital-форматами</li>
+                        <li>Создание баннеров и&nbsp;email-рассылок</li>
+                        <li>
+                          Подготовка гайдов и&nbsp;шаблонов для&nbsp;email-рассылок
+                        </li>
+                        <li>
+                          Создание key visual (статичные и&nbsp;анимированные)
+                        </li>
+                        <li>Ресайзы промостраниц под&nbsp;формат рассылок</li>
+                        <li>Дизайн-ревью рассылок с&nbsp;верстальщиками</li>
+                        <li>Работа по&nbsp;брендбуку и&nbsp;развитие айдентики</li>
+                        <li>Работа в&nbsp;команде с&nbsp;менеджером и&nbsp;копирайтером</li>
+                      </ul>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Работала в&nbsp;программах и&nbsp;нейросетях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cv-row cv-row--experience">
+              <button
+                class="cv-row__top cv-row__header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exp-thkb"
+              >
+                <div class="cv-row__main">
+                  <span class="cv-row__year">2019 — 2021</span>
+                  <div class="cv-row__text">
+                    <p class="cv-row__title">Старший графический дизайнер</p>
+                    <p class="cv-row__subtitle">Тейковский хлопчатобумажный комбинат</p>
+                  </div>
+                </div>
+                <span class="cv-row__toggle" aria-hidden="true">
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--default"
+                    src="assets/icon-plus.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--filled"
+                    src="assets/icon-plus-filled.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                </span>
+              </button>
+              <div class="cv-row__panel" id="exp-thkb" aria-hidden="true">
+                <div class="cv-row__panel-inner">
+                  <div class="cv-row__panel-content">
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">Что делала</h3>
+                      <p class="cv-row__panel-text">
+                        Развивала айдентику нескольких брендов домашнего
+                        текстиля и&nbsp;одежды для&nbsp;взрослых и&nbsp;детей:
+                        Juno, Crazy Getup, Непоседа, Унисон, MiaCara, ТХБК.
+                      </p>
+                      <p class="cv-row__panel-text">
+                        Готовила креативы и&nbsp;макеты для&nbsp;упаковки, рекламы,
+                        сайта компании и&nbsp;соцсетей.
+                      </p>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Подробнее об&nbsp;обязанностях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Работа с&nbsp;печатными и&nbsp;digital-форматами</li>
+                        <li>
+                          Создание key visual (статичные и&nbsp;анимированные)
+                        </li>
+                        <li>
+                          Создание лендингов, баннеров, email-рассылок,
+                          электронных каталогов
+                        </li>
+                        <li>
+                          Создание упаковки, печатных каталогов, наружной
+                          рекламы, POS-материалов
+                        </li>
+                        <li>Создание мокапов интерьеров и&nbsp;предметов</li>
+                        <li>Ретушь и&nbsp;цветокоррекция фото</li>
+                        <li>Работа в&nbsp;команде с&nbsp;бренд-менеджером</li>
+                      </ul>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Работала в&nbsp;программах и&nbsp;нейросетях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe InDesign</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cv-row cv-row--experience">
+              <button
+                class="cv-row__top cv-row__header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exp-repa"
+              >
+                <div class="cv-row__main">
+                  <span class="cv-row__year">2018 — 2019</span>
+                  <div class="cv-row__text">
+                    <p class="cv-row__title">Графический дизайнер</p>
+                    <p class="cv-row__subtitle">Repa PR</p>
+                  </div>
+                </div>
+                <span class="cv-row__toggle" aria-hidden="true">
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--default"
+                    src="assets/icon-plus.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--filled"
+                    src="assets/icon-plus-filled.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                </span>
+              </button>
+              <div class="cv-row__panel" id="exp-repa" aria-hidden="true">
+                <div class="cv-row__panel-inner">
+                  <div class="cv-row__panel-content">
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">Что делала</h3>
+                      <p class="cv-row__panel-text">
+                        Создавала дизайн для&nbsp;мероприятий: WOW Awards 2018,
+                        JOY 2018, Девелоперская среда 2018.
+                      </p>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Подробнее об&nbsp;обязанностях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Работа с&nbsp;печатными и&nbsp;digital-форматами</li>
+                        <li>
+                          Создание key visual (статичные и&nbsp;анимированные)
+                        </li>
+                        <li>
+                          Создание баннеров для&nbsp;соцсетей и&nbsp;рекламных
+                          площадок
+                        </li>
+                        <li>
+                          Создание оформления помещения для&nbsp;мероприятий
+                        </li>
+                        <li>
+                          Подготовка презентаций и&nbsp;коммерческих предложений
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">
+                        Работала в&nbsp;программах и&nbsp;нейросетях
+                      </h3>
+                      <ul class="cv-row__panel-list">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe InDesign</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cv-row cv-row--experience">
+              <button
+                class="cv-row__top cv-row__header"
+                type="button"
+                aria-expanded="false"
+                aria-controls="exp-dymov"
+              >
+                <div class="cv-row__main">
+                  <span class="cv-row__year">2016 — 2018</span>
+                  <div class="cv-row__text">
+                    <p class="cv-row__title">Предметный дизайнер</p>
+                    <p class="cv-row__subtitle">Дымов Керамика</p>
+                  </div>
+                </div>
+                <span class="cv-row__toggle" aria-hidden="true">
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--default"
+                    src="assets/icon-plus.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                  <img
+                    class="cv-row__toggle-icon cv-row__toggle-icon--filled"
+                    src="assets/icon-plus-filled.svg"
+                    width="32"
+                    height="32"
+                    alt=""
+                  />
+                </span>
+              </button>
+              <div class="cv-row__panel" id="exp-dymov" aria-hidden="true">
+                <div class="cv-row__panel-inner">
+                  <div class="cv-row__panel-content">
+                    <div class="cv-row__panel-group">
+                      <h3 class="cv-row__panel-heading">Что делала</h3>
+                      <ul class="cv-row__panel-list">
+                        <li>
+                          Создавала модели посуды и&nbsp;декора для&nbsp;дома
+                          и&nbsp;ресторанов, а&nbsp;также сувенирную продукцию
+                          для&nbsp;музеев Третьяковская галерея и&nbsp;Музеи
+                          Московского Кремля.
+                        </li>
+                        <li>
+                          Были созданы награды для&nbsp;Milano Grand Ball
+                          и&nbsp;The Art Newspaper&nbsp;Russia.
+                        </li>
+                        <li>
+                          В&nbsp;сотрудничестве с&nbsp;художниками выпустила
+                          авторские коллекции с&nbsp;Кариной Кино, Ириной
+                          Тотибадзе, Дюдей Сарабьяновым.
+                        </li>
+                        <li>
+                          Запустила и&nbsp;вела конкурс на&nbsp;разработку
+                          изделий для&nbsp;Дымов&nbsp;Керамики.
+                        </li>
+                        <li>
+                          Наладила сотрудничество между&nbsp;Дымов&nbsp;Керамикой
+                          и&nbsp;Кировской керамикой для&nbsp;размещения заказов.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        </div>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=portfolio-dropdown-fix-1"></script>
+  </body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Редизайн телеграм-канала Мегамаркета — Светлана Седлова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=telegram-mobile-1" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="pill pill--black header__about" href="index.html">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+              <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black header__cv" href="cv.html">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+            <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main case-page case-page--mega case-page--mega-telegram">
+        <section class="case-hero">
+          <div class="case-page__inner case-hero__inner">
+            <img
+              class="case-hero__logo"
+              src="assets/logos/megamarket.svg"
+              width="281"
+              height="36"
+              alt="мегамаркет"
+            />
+            <h1 class="case-hero__title">
+              Редизайн телеграм-канала<br />Мегамаркета
+            </h1>
+            <ul class="case-hero__tags">
+              <li>гайды</li>
+              <li>шаблоны</li>
+              <li>дизайн</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-about">
+          <div class="case-page__inner case-about__inner">
+            <div class="case-about__block">
+              <h2 class="case-about__title">О проекте</h2>
+              <p class="case-about__text">
+                Telegram-канал маркетплейса был в очереди на обновление после
+                презентации ребрендинга Мегамаркета в сентябре 2023 года. Необходимо
+                было создать шаблоны для шести часто используемых рубрик.
+              </p>
+            </div>
+            <div class="case-about__block">
+              <h2 class="case-about__title">Моя роль</h2>
+              <p class="case-about__text">
+                Проведение анализа текущего состояния контента Telegram-канала и
+                приведение его к единому стилю путём создания шаблонов для шести
+                рубрик и мини-гайда по работе с ними.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-work">
+          <div class="case-page__inner">
+            <div class="case-work__head">
+              <h2 class="case-work__title">Шаблоны</h2>
+              <div class="case-work__chips" role="tablist" aria-label="Шаблоны">
+                <button
+                  class="case-work__chip case-work__chip--active"
+                  type="button"
+                  role="tab"
+                  id="tab-promocodes"
+                  aria-selected="true"
+                  aria-controls="panel-promocodes"
+                  data-tab="promocodes"
+                >
+                  Промокоды
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-catalog"
+                  aria-selected="false"
+                  aria-controls="panel-catalog"
+                  data-tab="catalog"
+                  tabindex="-1"
+                >
+                  Товарная подборка
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-unusual"
+                  aria-selected="false"
+                  aria-controls="panel-unusual"
+                  data-tab="unusual"
+                  tabindex="-1"
+                >
+                  Необычный товар
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-day"
+                  aria-selected="false"
+                  aria-controls="panel-day"
+                  data-tab="day"
+                  tabindex="-1"
+                >
+                  Товар дня
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-memes"
+                  aria-selected="false"
+                  aria-controls="panel-memes"
+                  data-tab="memes"
+                  tabindex="-1"
+                >
+                  Мемы
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-sales"
+                  aria-selected="false"
+                  aria-controls="panel-sales"
+                  data-tab="sales"
+                  tabindex="-1"
+                >
+                  Акции
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel is-active"
+              id="panel-promocodes"
+              role="tabpanel"
+              aria-labelledby="tab-promocodes"
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Для подсветки промокодов создано 3 вариации шаблонов с целью
+                    увеличения разнообразия контента в ленте канала. Параметры каждого
+                    элемента макета фиксированы. Необходимо расположить подходящую
+                    графику и подобрать цвет фона
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/mega-telegram/promocodes-templates-1x.png"
+                  width="1259"
+                  height="375"
+                  alt="Три шаблона промокода: креатив снизу, сверху и на весь формат"
+                />
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Примеры</h3>
+                <div class="case-extra__images case-extra__images--row">
+                  <img
+                    src="assets/cases/mega-telegram/promocode-example-1-1x.png"
+                    srcset="assets/cases/mega-telegram/promocode-example-1-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Пост с промокодом: персонаж на лавандовом фоне"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/promocode-example-2-1x.png"
+                    srcset="assets/cases/mega-telegram/promocode-example-2-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Пост с промокодом: витрина с маркизой"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/promocode-example-3-1x.png"
+                    srcset="assets/cases/mega-telegram/promocode-example-3-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Пост с промокодом: абстрактный фиолетовый фон"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-catalog"
+              role="tabpanel"
+              aria-labelledby="tab-catalog"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Универсальный шаблон для подборки товаров из разных направлений и
+                    категорий. Параметры каждого элемента макета фиксированы.
+                    Необходимо расположить обтравленное фото товара и подобрать цвет
+                    фона
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/mega-telegram/catalog-templates-1x.png"
+                  width="1259"
+                  height="375"
+                  alt="Шаблон товарной подборки: название, фото товара и иконка Мегамаркета"
+                />
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Примеры</h3>
+                <div class="tg-catalog">
+                  <div class="tg-catalog__row">
+                    <div class="tg-catalog__col">
+                      <p class="tg-catalog__label">Направление «Мода»</p>
+                      <img
+                        src="assets/cases/mega-telegram/catalog-moda-1x.png"
+                        width="600"
+                        height="600"
+                        alt="Примеры товарной подборки: направление Мода"
+                      />
+                    </div>
+                    <div class="tg-catalog__col">
+                      <p class="tg-catalog__label">Направление «Красота»</p>
+                      <img
+                        src="assets/cases/mega-telegram/catalog-beauty-1x.png"
+                        width="600"
+                        height="600"
+                        alt="Примеры товарной подборки: направление Красота"
+                      />
+                    </div>
+                  </div>
+                  <div class="tg-catalog__row">
+                    <div class="tg-catalog__col">
+                      <p class="tg-catalog__label">Направление «Спорт»</p>
+                      <img
+                        src="assets/cases/mega-telegram/catalog-sport-1x.png"
+                        width="600"
+                        height="600"
+                        alt="Примеры товарной подборки: направление Спорт"
+                      />
+                    </div>
+                    <div class="tg-catalog__col">
+                      <p class="tg-catalog__label">Тематическая подборка</p>
+                      <img
+                        src="assets/cases/mega-telegram/catalog-theme-1x.png"
+                        width="600"
+                        height="600"
+                        alt="Примеры тематической товарной подборки"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-unusual"
+              role="tabpanel"
+              aria-labelledby="tab-unusual"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Данная рубрика для шаблонов была создана с целью увеличения продаж
+                    конкретных товаров и для того, чтобы разнообразить контент.
+                    Параметры каждого элемента макета фиксированы. Необходимо
+                    расположить обтравленное фото товара, подобрать цвет фона и окрасить
+                    пьедесталы в такой же тон
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/mega-telegram/unusual-templates-1x.png"
+                  width="1259"
+                  height="375"
+                  alt="Три шаблона необычного товара на пьедестале с охранными зонами"
+                />
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Примеры</h3>
+                <div class="case-extra__images case-extra__images--row">
+                  <img
+                    src="assets/cases/mega-telegram/unusual-example-1-1x.png"
+                    srcset="assets/cases/mega-telegram/unusual-example-1-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Необычный товар: умная колонка VK Капсула"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/unusual-example-2-1x.png"
+                    srcset="assets/cases/mega-telegram/unusual-example-2-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Необычный товар: эпилятор Timberk"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/unusual-example-3-1x.png"
+                    srcset="assets/cases/mega-telegram/unusual-example-3-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Необычный товар: смартчасы Coros"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-day"
+              role="tabpanel"
+              aria-labelledby="tab-day"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Для увеличения продаж конкретных товаров был создан данный шаблон.
+                    Параметры каждого элемента макета фиксированы. Необходимо
+                    расположить обтравленное фото товара и подобрать цвет фона
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack case-mockups-stack--fit">
+                <img
+                  src="assets/cases/mega-telegram/day-templates-1x.png"
+                  width="375"
+                  height="375"
+                  alt="Шаблон товара дня: название, рейтинг, фото и кнопка Купить"
+                />
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Примеры</h3>
+                <div class="case-extra__images case-extra__images--row">
+                  <img
+                    src="assets/cases/mega-telegram/day-example-1-1x.png"
+                    srcset="assets/cases/mega-telegram/day-example-1-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Товар дня: мягкая игрушка Зайчик"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/day-example-2-1x.png"
+                    srcset="assets/cases/mega-telegram/day-example-2-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Товар дня: беспроводные наушники JBL"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/day-example-3-1x.png"
+                    srcset="assets/cases/mega-telegram/day-example-3-2x.png 2x"
+                    width="375"
+                    height="375"
+                    alt="Товар дня: ковёр для фитнеса Спортмастер"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-memes"
+              role="tabpanel"
+              aria-labelledby="tab-memes"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Мемы плотно входят в&nbsp;жизнь большинства людей, поэтому важно
+                    их&nbsp;использовать для&nbsp;лучшего контакта с&nbsp;аудиторией
+                    маркетплейса. В&nbsp;шаблонах настроены автолейауты, параметры текстов
+                    фиксированы. Необходимо расположить картинку мема в&nbsp;маске
+                    и&nbsp;подобрать цвет фона
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/mega-telegram/memes-templates-1x.png"
+                  width="1260"
+                  height="288"
+                  alt="Четыре шаблона мемов: текст сверху, снизу, коллаж и сетка фото"
+                />
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Примеры</h3>
+                <div class="case-extra__images case-extra__images--row case-extra__images--row-4">
+                  <img
+                    src="assets/cases/mega-telegram/meme-example-1-1x.png"
+                    srcset="assets/cases/mega-telegram/meme-example-1-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Мем: скептичный пёс про скидки"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/meme-example-2-1x.png"
+                    srcset="assets/cases/mega-telegram/meme-example-2-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Мем: кот у горки с трамплином"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/meme-example-3-1x.png"
+                    srcset="assets/cases/mega-telegram/meme-example-3-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Мем: новогодние подарки в 7 и 30 лет"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/meme-example-4-1x.png"
+                    srcset="assets/cases/mega-telegram/meme-example-4-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Мем: выбор человека с промокодом КусьКусь"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-sales"
+              role="tabpanel"
+              aria-labelledby="tab-sales"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    В&nbsp;Telegram-канале необходимо подсвечивать актуальные акции
+                    маркетплейса, с&nbsp;целью улучшения осведомлённости аудитории
+                    и&nbsp;конвертации её&nbsp;в&nbsp;заказы. В&nbsp;шаблонах настроены
+                    автолейауты и&nbsp;заданы вариации параметров для&nbsp;текстов.
+                    Плашки со&nbsp;скидками и&nbsp;промокодом могут быть неиспользованы
+                    и&nbsp;скрыты в&nbsp;слоях. Креатив необходимо располагать
+                    по&nbsp;центру макета или&nbsp;сдвинуть в&nbsp;правую его&nbsp;часть
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/mega-telegram/sales-templates-1x.png"
+                  width="1260"
+                  height="288"
+                  alt="Четыре шаблона акций: с выгодой, промокодом и без плашек"
+                />
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Примеры</h3>
+                <p class="case-extra__note">
+                  Креативы созданы дизайнерами в&nbsp;рамках рекламных кампаний
+                </p>
+                <div
+                  class="case-extra__images case-extra__images--row case-extra__images--row-4 case-extra__images--sales"
+                >
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-1-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-1-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: Новогодняя распродажа до 80%"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-2-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-2-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: твой подарок до 70%"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-3-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-3-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: Режим подготовка к теплу до 60%"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-4-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-4-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: Детские смарт-часы"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-5-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-5-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: Тренируйся как чемпион"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-6-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-6-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: CRAVE мясной рацион"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-7-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-7-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: Arya home уют дома"
+                  />
+                  <img
+                    src="assets/cases/mega-telegram/sales-example-8-1x.png"
+                    srcset="assets/cases/mega-telegram/sales-example-8-2x.png 2x"
+                    width="288"
+                    height="288"
+                    alt="Креатив: Бытовая техника KUPPERSBERG"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=sticky-flush-1"></script>
+  </body>
+</html>

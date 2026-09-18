@@ -1,0 +1,7 @@
+_archive/
+_tmp_*/
+_tmp_*
+*.pyc
+.DS_Store
+Thumbs.db
+.cursor/

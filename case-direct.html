@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная Директа — Светлана Седлова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=landing-gap-2" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="pill pill--black header__about" href="index.html">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+              <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black header__cv" href="cv.html">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+            <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main case-page case-page--direct case-page--direct-home">
+        <section class="case-hero">
+          <div class="case-page__inner case-hero__inner">
+            <img
+              class="case-hero__logo"
+              src="assets/logos/yandex-direct-white.svg"
+              width="256"
+              height="36"
+              alt="Яндекс Директ"
+            />
+            <h1 class="case-hero__title">Главная Директа</h1>
+            <ul class="case-hero__tags">
+              <li>лендинг</li>
+              <li>артдирекшен</li>
+              <li>редизайн</li>
+              <li>дизайн-ревью</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-about">
+          <div class="case-page__inner case-about__inner">
+            <div class="case-about__block">
+              <h2 class="case-about__title">О проекте</h2>
+              <p class="case-about__text">
+                Был проведён редизайн посадочной страницы Директа в&nbsp;связи
+                с&nbsp;тем, что за&nbsp;несколько лет структура и&nbsp;оффер
+                страницы стали размытыми из-за систематически точечно вносимых
+                изменений в&nbsp;разные блоки лендинга. Также требовалось
+                актуализировать визуал лендинга под обновившийся стиль бренда.
+              </p>
+            </div>
+            <div class="case-about__block">
+              <h2 class="case-about__title">Моя роль</h2>
+              <p class="case-about__text">
+                Создание концепции и&nbsp;структуры лендинга, дизайн
+                и&nbsp;арт-дирекшен. Работа в&nbsp;паре с&nbsp;3D-дизайнером
+                и&nbsp;моушен-дизайнером. Подготовка и&nbsp;передача
+                в&nbsp;разработку, проведение тестирования и&nbsp;дизайн-ревью.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="case-work">
+          <div class="case-page__inner">
+            <div class="case-work__head">
+              <h2 class="case-work__title">Лендинг</h2>
+              <div class="case-work__chips" role="tablist" aria-label="Состояния лендинга">
+                <button
+                  class="case-work__chip case-work__chip--active"
+                  type="button"
+                  role="tab"
+                  id="tab-redesign"
+                  aria-selected="true"
+                  aria-controls="panel-redesign"
+                  data-tab="redesign"
+                >
+                  Редизайн
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-before"
+                  aria-selected="false"
+                  aria-controls="panel-before"
+                  data-tab="before"
+                  tabindex="-1"
+                >
+                  До редизайна
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel is-active"
+              id="panel-redesign"
+              role="tabpanel"
+              aria-labelledby="tab-redesign"
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Для&nbsp;новой страницы были переработаны тексты
+                    и&nbsp;структура. Создан визуальный ритм, который управляет
+                    вниманием пользователя, а&nbsp;графика и&nbsp;анимации
+                    работают на&nbsp;усиление текстовых смыслов. Перед запуском
+                    было проведено А/Б-тестирование новой и&nbsp;старой версий,
+                    где новая показала лучший результат по&nbsp;количеству
+                    регистраций в&nbsp;Директе
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://direct.yandex.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups">
+                <div class="case-mockups__desktop case-mockups__frame">
+                  <img
+                    src="assets/cases/direct/desktop-1x.png?v=no-static-2"
+                    width="945"
+                    height="5438"
+                    alt="Главная Яндекс Директа — редизайн, десктопная версия"
+                  />
+                  <div class="case-mockups__anim-layer">
+                    <div class="case-mockups__clip case-mockups__clip--hero-desktop">
+                      <video
+                        class="case-mockups__anim"
+                        muted
+                        loop
+                        playsinline
+                        preload="auto"
+                        aria-hidden="true"
+                      >
+                        <source src="assets/cases/direct/hero.mp4?v=2" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div class="case-mockups__clip case-mockups__clip--block2-desktop">
+                      <video
+                        class="case-mockups__anim"
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        aria-hidden="true"
+                      >
+                        <source
+                          src="assets/cases/direct/block2-desktop.mp4?v=2"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </div>
+                </div>
+                <div class="case-mockups__mobile case-mockups__frame">
+                  <img
+                    src="assets/cases/direct/mobile-1x.png?v=no-static-1"
+                    width="236"
+                    height="5655"
+                    alt="Главная Яндекс Директа — редизайн, мобильная версия"
+                    loading="lazy"
+                  />
+                  <div class="case-mockups__anim-layer">
+                    <div class="case-mockups__clip case-mockups__clip--hero-mobile">
+                      <video
+                        class="case-mockups__anim"
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        aria-hidden="true"
+                      >
+                        <source src="assets/cases/direct/hero.mp4?v=2" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div class="case-mockups__clip case-mockups__clip--block2-mobile">
+                      <video
+                        class="case-mockups__anim"
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        aria-hidden="true"
+                      >
+                        <source
+                          src="assets/cases/direct/block2-mobile.mp4?v=2"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-before"
+              role="tabpanel"
+              aria-labelledby="tab-before"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    За&nbsp;несколько лет структура и&nbsp;оффер страницы стали
+                    размытыми из-за систематически точечно вносимых изменений
+                    в&nbsp;разные блоки лендинга. Также требовалось
+                    актуализировать визуал лендинга под обновившийся стиль
+                    бренда, чтобы соответствовать текущему времени
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups">
+                <div class="case-mockups__desktop">
+                  <img
+                    src="assets/cases/direct/before-desktop-1x.png"
+                    width="945"
+                    height="5380"
+                    alt="Главная Яндекс Директа — до редизайна, десктопная версия"
+                  />
+                </div>
+                <div class="case-mockups__mobile">
+                  <img
+                    src="assets/cases/direct/before-mobile-1x.png"
+                    width="236"
+                    height="5411"
+                    alt="Главная Яндекс Директа — до редизайна, мобильная версия"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=direct-mobile-1"></script>
+  </body>
+</html>

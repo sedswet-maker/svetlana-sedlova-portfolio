@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуга «Доставка от 2 часов» — Светлана Седлова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=delivery-gap-1" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="pill pill--black header__about" href="index.html">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+              <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black header__cv" href="cv.html">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+            <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main case-page case-page--mega case-page--mega-delivery">
+        <section class="case-hero">
+          <div class="case-page__inner case-hero__inner">
+            <img
+              class="case-hero__logo"
+              src="assets/logos/megamarket-white.svg"
+              width="281"
+              height="36"
+              alt="мегамаркет"
+            />
+            <h1 class="case-hero__title">Услуга «Доставка от&nbsp;2&nbsp;часов»</h1>
+            <ul class="case-hero__tags">
+              <li>веб-интерфейс</li>
+              <li>айдентика</li>
+              <li>гайды</li>
+              <li>дизайн</li>
+              <li>дизайн-ревью</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-about">
+          <div class="case-page__inner case-about__inner">
+            <div class="case-about__block">
+              <h2 class="case-about__title">О проекте</h2>
+              <p class="case-about__text">
+                «Доставка от&nbsp;2&nbsp;часов» — это&nbsp;новая услуга быстрой доставки товаров FMCG,
+                Beauty, мелкой электроники и&nbsp;техники на&nbsp;Мегамаркете.
+                Чтобы&nbsp;обратить внимание пользователей на&nbsp;товары с&nbsp;быстрой доставкой
+                встала необходимость создать яркий и&nbsp;выделяющийся стиль внутри бренда
+                Мегамаркет.
+              </p>
+            </div>
+            <div class="case-about__block">
+              <h2 class="case-about__title">Моя роль</h2>
+              <p class="case-about__text">
+                Разработка айдентики услуги. Создание структуры лендинга. Создание гайда
+                и&nbsp;арт-дирекшен фотостудии и&nbsp;дизайнеров.<br />
+                Подготовка и&nbsp;передача в&nbsp;разработку лендинга, проведение дизайн-ревью.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-work" data-delivery-tab="concept">
+          <div class="case-page__inner">
+            <div class="case-work__head">
+              <h2 class="case-work__title">Материалы</h2>
+              <div class="case-work__chips" role="tablist" aria-label="Материалы">
+                <button
+                  class="case-work__chip case-work__chip--active"
+                  type="button"
+                  role="tab"
+                  id="tab-concept"
+                  aria-selected="true"
+                  aria-controls="panel-concept"
+                  data-tab="concept"
+                >
+                  Концепция
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-showcase"
+                  aria-selected="false"
+                  aria-controls="panel-showcase"
+                  data-tab="showcase"
+                  tabindex="-1"
+                >
+                  Витрина услуги
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-guide"
+                  aria-selected="false"
+                  aria-controls="panel-guide"
+                  data-tab="guide"
+                  tabindex="-1"
+                >
+                  Гайд
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel is-active"
+              id="panel-concept"
+              role="tabpanel"
+              aria-labelledby="tab-concept"
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    В&nbsp;айдентике «Доставки от&nbsp;2&nbsp;часов» заложена метафора
+                    скорости, которая передаётся через&nbsp;фигуру стрелки
+                    и&nbsp;динамично компонуемые товары. Основным цветом стал
+                    Оранжевый, который делает стиль заметным, но&nbsp;при&nbsp;этом
+                    гармонично встаёт в&nbsp;пару с&nbsp;основным цветом
+                    Мегамаркета, Лавандовым
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Графические элементы</h3>
+                <div class="case-work__text">
+                  <p>
+                    Ключевым символом является фигура в виде стрелки и тоновой раскладки,
+                    напоминающей шлейф от только что промелькнувшего объекта — быстро
+                    доставленных товаров покупателю Мегамаркета
+                  </p>
+                </div>
+                <div class="delivery-graphics">
+                  <figure class="delivery-graphics__item">
+                    <span class="delivery-graphics__media">
+                      <img
+                        src="assets/cases/mega-delivery/graphic-banner-1x.png?v=1"
+                        width="127"
+                        height="162"
+                        alt=""
+                      />
+                    </span>
+                    <figcaption>Элемент баннера</figcaption>
+                  </figure>
+                  <figure class="delivery-graphics__item">
+                    <span class="delivery-graphics__media">
+                      <img
+                        src="assets/cases/mega-delivery/graphic-shield-image-1x.png?v=1"
+                        width="258"
+                        height="101"
+                        alt=""
+                      />
+                    </span>
+                    <figcaption>Шильд для имиджевого баннера</figcaption>
+                  </figure>
+                  <figure class="delivery-graphics__item">
+                    <span class="delivery-graphics__media">
+                      <img
+                        src="assets/cases/mega-delivery/graphic-icon-1x.png?v=1"
+                        width="111"
+                        height="101"
+                        alt=""
+                      />
+                    </span>
+                    <figcaption>Иконка</figcaption>
+                  </figure>
+                  <figure class="delivery-graphics__item">
+                    <span class="delivery-graphics__media">
+                      <img
+                        src="assets/cases/mega-delivery/graphic-shield-promo-1x.png?v=1"
+                        width="246"
+                        height="54"
+                        alt=""
+                      />
+                    </span>
+                    <figcaption>Шильд для промо баннера</figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Палитра</h3>
+                <div class="case-work__text">
+                  <p>
+                    Акцентным цветом быстрой доставки стал оранжевый&nbsp;— драйвовый и&nbsp;яркий.
+                    За&nbsp;счёт этого&nbsp;«Доставка от&nbsp;2&nbsp;часов» будет выделяться внутри бренда
+                    Мегамаркет. Лавандовый цвет используется в&nbsp;сервисе как&nbsp;дополнительный
+                    и&nbsp;родственный для&nbsp;айдентики бренда Мегамаркет&nbsp;— он&nbsp;задействован в&nbsp;типографике
+                    и&nbsp;фотостиле
+                  </p>
+                </div>
+                <div class="delivery-palette">
+                  <article class="delivery-palette__card delivery-palette__card--orange">
+                    <p class="delivery-palette__name">Оранжевый</p>
+                    <p class="delivery-palette__use">
+                      Используется только<br />
+                      в граф.элементах айдентики<br />
+                      и в предметной&nbsp;съёмке<br />
+                      (цвет предмета)
+                    </p>
+                    <p class="delivery-palette__code">HEX FF742F<br />RGB 255 116 47</p>
+                  </article>
+                  <article class="delivery-palette__card delivery-palette__card--lavender">
+                    <p class="delivery-palette__name">Лавандовый</p>
+                    <p class="delivery-palette__use">
+                      Используется только<br />
+                      для типографики<br />
+                      и предметной съёмки<br />
+                      (цвет предмета)
+                    </p>
+                    <p class="delivery-palette__code">HEX 8654CC<br />RGB 134 84 204</p>
+                  </article>
+                  <article class="delivery-palette__card delivery-palette__card--light-lav">
+                    <p class="delivery-palette__name">Светло-лавандовый</p>
+                    <p class="delivery-palette__use">
+                      Используется для<br />
+                      фонов баннеров<br />
+                      и&nbsp;плиток
+                    </p>
+                    <p class="delivery-palette__code">HEX FAF1FF<br />RGB 250 241 255</p>
+                  </article>
+                  <article class="delivery-palette__card delivery-palette__card--light-orange">
+                    <p class="delivery-palette__name">Светло-оранжевый</p>
+                    <p class="delivery-palette__use">
+                      Используется для<br />
+                      фонов баннеров<br />
+                      и&nbsp;плиток
+                    </p>
+                    <p class="delivery-palette__code">HEX FFECE3<br />RGB 255 236 227</p>
+                  </article>
+                  <article class="delivery-palette__card delivery-palette__card--gray">
+                    <p class="delivery-palette__name">Светло-серый</p>
+                    <p class="delivery-palette__use">
+                      Используется для<br />
+                      фонов баннеров<br />
+                      и&nbsp;плиток
+                    </p>
+                    <p class="delivery-palette__code">HEX F5F5F5<br />RGB 245 245 245</p>
+                  </article>
+                </div>
+              </div>
+
+              <div class="case-extra">
+                <h3 class="case-extra__title">Фотостиль</h3>
+                <div class="case-work__text">
+                  <p>
+                    Фотостиль для&nbsp;баннеров слайдера продуман таким образом, что&nbsp;один из&nbsp;товаров
+                    должен быть обязательно окрашен в&nbsp;фиолетовый или&nbsp;оранжевый цвет.
+                    Товары могут быть собраны в&nbsp;статичную или&nbsp;динамичную композицию
+                    на&nbsp;плоскости. При&nbsp;таком подходе фотоконтент будет готовиться быстрее,
+                    а&nbsp;благодаря цветовым акцентам не&nbsp;будет выглядеть однообразно
+                  </p>
+                </div>
+                <div class="case-extra__images case-extra__images--fit">
+                  <img
+                    src="assets/cases/mega-delivery/photostyle-banner-1x.png?v=2"
+                    width="867"
+                    height="300"
+                    alt="Пример фотостиля для баннеров слайдера «Доставка от 2 часов»"
+                  />
+                </div>
+              </div>
+
+              <div class="case-extra">
+                <div class="case-work__text">
+                  <p>
+                    Фотостиль для&nbsp;категорийных плиток несколько отличается, но&nbsp;создан в&nbsp;рамках
+                    основной концепции — товары собраны в&nbsp;динамичные композиции.
+                    Здесь мы&nbsp;смогли позволить себе чуть больше креатива, чтобы&nbsp;контент
+                    быстро не&nbsp;наскучил пользователям, т.к.&nbsp;он&nbsp;не&nbsp;будет обновляться долгое
+                    время.
+                  </p>
+                </div>
+                <div class="delivery-tiles">
+                  <article class="delivery-tiles__card">
+                    <p class="delivery-tiles__title">Овощи и&nbsp;фрукты</p>
+                    <img
+                      class="delivery-tiles__photo delivery-tiles__photo--vegetables"
+                      src="assets/cases/mega-delivery/tile-vegetables-1x.png"
+                      width="224"
+                      height="224"
+                      alt=""
+                    />
+                  </article>
+                  <article class="delivery-tiles__card">
+                    <p class="delivery-tiles__title">Бакалея</p>
+                    <img
+                      class="delivery-tiles__photo delivery-tiles__photo--grocery"
+                      src="assets/cases/mega-delivery/tile-grocery-1x.png"
+                      width="249"
+                      height="248"
+                      alt=""
+                    />
+                  </article>
+                  <article class="delivery-tiles__card">
+                    <p class="delivery-tiles__title">Молочная продукция</p>
+                    <img
+                      class="delivery-tiles__photo delivery-tiles__photo--dairy"
+                      src="assets/cases/mega-delivery/tile-dairy-1x.png"
+                      width="229"
+                      height="228"
+                      alt=""
+                    />
+                  </article>
+                  <article class="delivery-tiles__card">
+                    <p class="delivery-tiles__title">Напитки</p>
+                    <img
+                      class="delivery-tiles__photo delivery-tiles__photo--drinks"
+                      src="assets/cases/mega-delivery/tile-drinks-1x.png"
+                      width="240"
+                      height="240"
+                      alt=""
+                    />
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-showcase"
+              role="tabpanel"
+              aria-labelledby="tab-showcase"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    На&nbsp;витрине «Доставка от&nbsp;2&nbsp;часов» размещена карусель с&nbsp;актуальными
+                    предложениями, а&nbsp;ниже подборка с&nbsp;сезонными предложениями, чтобы&nbsp;релевантные
+                    товары были всегда на&nbsp;виду и&nbsp;быстрее распродавались. Далее
+                    находятся плитки с&nbsp;категориями товаров, собранных в&nbsp;динамичные
+                    композиции, которые привлекают внимание и&nbsp;запоминаются.
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/mega-delivery/showcase-1x.png"
+                  width="1260"
+                  height="2465"
+                  alt="Витрина услуги «Доставка от 2 часов» — десктопная версия"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-guide"
+              role="tabpanel"
+              aria-labelledby="tab-guide"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    В&nbsp;гайде «Доставки от&nbsp;2&nbsp;часов» описаны элементы айдентики и&nbsp;правила её
+                    построения, сборка макетов и&nbsp;использование фотостиля
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack">
+                <img
+                  src="assets/cases/mega-delivery/guide-1x.png"
+                  width="1260"
+                  height="18086"
+                  alt="Гайд айдентики услуги «Доставка от 2 часов»"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=sticky-flush-1"></script>
+  </body>
+</html>

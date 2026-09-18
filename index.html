@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Светлана Седлова — портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=alumni-rotate-1" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header header--hero">
+        <a class="pill pill--black header__about" href="#about">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="#repa">Repa PR</a>
+              <a class="pill pill--red" href="#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black header__cv" href="cv.html">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="#repa">Repa PR</a>
+            <a class="pill pill--red" href="#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero" id="about">
+          <div class="hero__profile">
+            <div class="hero__photo">
+              <img
+                src="assets/hero-photo.png"
+                width="180"
+                height="180"
+                alt="Светлана Седлова"
+              />
+            </div>
+            <div class="hero__text">
+              <h1 class="hero__title">Светлана Седлова</h1>
+              <p class="hero__subtitle">
+                коммуникационный дизайн |<br />ui/ux | веб-дизайн
+              </p>
+            </div>
+          </div>
+          <nav class="hero__projects" aria-label="Проекты">
+            <a class="pill pill--black" href="#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="#citilink">Ситилинк</a>
+            <a class="pill pill--black" href="#practicum">Яндекс Практикум</a>
+            <a class="pill pill--teal" href="#thkb">ТХКБ</a>
+            <a class="pill pill--sky" href="#repa">Repa PR</a>
+            <a class="pill pill--red" href="#dymov">Дымов Керамика</a>
+          </nav>
+          <div class="hero__contacts">
+            <a
+              class="hero__contact"
+              href="https://t.me/Svetlana_Sed"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icon-telegram-hero.svg" width="18" height="18" alt="" />
+              <span>Svetlana_Sed</span>
+            </a>
+            <button
+              class="hero__contact"
+              type="button"
+              data-copy="swet.sed@yandex.ru"
+              aria-label="Скопировать почту"
+            >
+              <img src="assets/icon-email-hero.svg" width="18" height="18" alt="" />
+              <span>swet.sed@yandex.ru</span>
+            </button>
+            <button
+              class="hero__contact"
+              type="button"
+              data-copy="+7 985 167 27 76"
+              aria-label="Скопировать телефон"
+            >
+              <img src="assets/icon-phone-hero.svg" width="18" height="18" alt="" />
+              <span>+7 985 167 27 76</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="portfolio" id="portfolio" aria-label="Работы">
+          <article class="project" id="yandex-ads">
+            <div class="project__head">
+              <h2 class="project__title">Яндекс Реклама</h2>
+              <div class="project__meta">
+                <p class="project__desc">
+                  Отвечала за&nbsp;веб-направление в&nbsp;Рекламных сервисах
+                  Яндекса, а&nbsp;именно: Директ, KIT, Бизнес, Рекламная сеть
+                  Яндекса, Яндекс&nbsp;Товары, Портал Рекламы
+                </p>
+                <p class="project__date">апрель 2025 — июль 2026</p>
+              </div>
+            </div>
+            <div class="project__carousel">
+              <div class="project__carousel-track project__grid project__grid--yandex">
+              <ul class="project__page" role="group" aria-label="Страница 1">
+                <li class="case">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-kit-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-kit.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-kit.svg" width="131" height="24" alt="Яндекс KIT" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Главная<br />KIT</h3>
+                    <div class="case__tags"><span>сайт</span><span>дизайн</span><span>ai-графика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-kit.html" aria-label="Открыть кейс «Главная KIT»"></a>
+              </li>
+                <li class="case">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-referral-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-referral.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-kit.svg" width="131" height="24" alt="Яндекс KIT" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Реферальная<br />программа</h3>
+                    <div class="case__tags"><span>лендинг</span><span>дизайн</span><span>ai-графика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-referral.html" aria-label="Открыть кейс «Реферальная программа»"></a>
+              </li>
+                <li class="case">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-wheel-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-wheel.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-kit.svg" width="131" height="24" alt="Яндекс KIT" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Колесо<br />фортуны</h3>
+                    <div class="case__tags case__tags--stacked">
+                      <div class="case__tags-row">
+                        <span>лендинг</span><span>дизайн</span>
+                      </div>
+                      <div class="case__tags-row">
+                        <span>геймификация</span><span>ai-графика</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-wheel.html" aria-label="Открыть кейс «Колесо фортуны»"></a>
+              </li>
+              </ul>
+              <ul class="project__page" role="group" aria-label="Страница 2">
+                <li class="case">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-rsya-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-rsya.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-rsya.svg" width="204" height="24" alt="Рекламная сеть Яндекса" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">20 лет РСЯ</h3>
+                    <div class="case__tags"><span>лендинг</span><span>дизайн</span><span>геймификация</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-rsya.html" aria-label="Открыть кейс «20 лет РСЯ»"></a>
+              </li>
+                <li class="case">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-direct-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-direct.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-direct-white.svg" width="171" height="24" alt="Яндекс Директ" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Главная<br />Директа</h3>
+                    <div class="case__tags"><span>лендинг</span><span>редизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-direct.html" aria-label="Открыть кейс «Главная Директа»"></a>
+              </li>
+                <li class="case">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-quiz-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-quiz.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-direct-white.svg" width="171" height="24" alt="Яндекс Директ" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Квиз</h3>
+                    <div class="case__tags case__tags--stacked">
+                      <div class="case__tags-row">
+                        <span>лендинг</span><span>дизайн</span>
+                      </div>
+                      <div class="case__tags-row">
+                        <span>геймификация</span><span>ai-графика</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-quiz.html" aria-label="Открыть кейс «Квиз»"></a>
+              </li>
+              </ul>
+              <ul class="project__page" role="group" aria-label="Страница 3">
+                <li class="case case--dark-text">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-elama-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-elama.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-direct-dark.svg" width="171" height="24" alt="Яндекс Директ" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Обновление<br />оффера ELama</h3>
+                    <div class="case__tags"><span>перф</span><span>лендинг</span><span>редизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-elama.html" aria-label="Открыть кейс «Обновление оффера ELama»"></a>
+              </li>
+                <li class="case case--dark-text">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-ai-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-ai.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-direct-dark.svg" width="171" height="24" alt="Яндекс Директ" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">ИИ-помощник<br />в Директе</h3>
+                    <div class="case__tags"><span>перф</span><span>лендинг</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-ai.html" aria-label="Открыть кейс «ИИ-помощник в Директе»"></a>
+              </li>
+                <li class="case project__item--extra">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-landings-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-landings.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-direct-white.svg" width="171" height="24" alt="Яндекс Директ" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Лендинги<br />в Директе</h3>
+                    <div class="case__tags"><span>перф</span><span>лендинг</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-landings.html" aria-label="Открыть кейс «Лендинги в Директе»"></a>
+              </li>
+              </ul>
+              <ul class="project__page" role="group" aria-label="Страница 4">
+                <li class="case case--dark-text case--maps project__item--extra">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-maps-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-maps.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-direct-dark.svg" width="171" height="24" alt="Яндекс Директ" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Продвижение<br />в Картах</h3>
+                    <div class="case__tags"><span>перф</span><span>лендинг</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-maps.html" aria-label="Открыть кейс «Продвижение в Картах»"></a>
+              </li>
+                <li class="case project__item--extra">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/yandex-bg-place-m.png" /><img class="case__bg" src="assets/portfolio/yandex-bg-place.png" alt="" loading="lazy" /></picture>
+                <img class="case__logo" src="assets/logos/yandex-business.svg" width="122" height="24" alt="Яндекс Бизнес" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Хорошее<br />место</h3>
+                    <div class="case__tags"><span>перф</span><span>лендинг</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-place.html" aria-label="Открыть кейс «Хорошее место»"></a>
+              </li>
+              </ul>
+              </div>
+              <div class="project__dots" role="group" aria-label="Страницы кейсов">
+                <button type="button" class="project__dot is-active" aria-label="Страница 1" aria-current="true"></button>
+                <button type="button" class="project__dot" aria-label="Страница 2"></button>
+                <button type="button" class="project__dot" aria-label="Страница 3"></button>
+                <button type="button" class="project__dot" aria-label="Страница 4"></button>
+              </div>
+            </div>
+            <ul class="project__grid-hidden" hidden aria-hidden="true">
+                <li class="case" hidden>
+                <img class="case__bg" src="assets/portfolio/yandex-bg-premium.png" alt="" loading="lazy" />
+                <img class="case__logo" src="assets/logos/yandex-ads.svg" width="124" height="24" alt="Яндекс Реклама" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Медийные премиум-форматы</h3>
+                    <div class="case__tags"><span>перф</span><span>лендинг</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+              </li>
+                <li class="case case--dark-text project__item--extra" hidden>
+                <img class="case__bg" src="assets/portfolio/yandex-bg-services.png" alt="" loading="lazy" />
+                <img class="case__logo" src="assets/logos/yandex-direct-dark.svg" width="171" height="24" alt="Яндекс Директ" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Рекламная галерея услуг</h3>
+                    <div class="case__tags"><span>перф</span><span>лендинг</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+              </li>
+                <li class="case project__item--extra" hidden>
+                <img class="case__bg" src="assets/portfolio/yandex-bg-business.png" alt="" loading="lazy" />
+                <img class="case__logo" src="assets/logos/yandex-business.svg" width="122" height="24" alt="Яндекс Бизнес" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Главная Бизнеса</h3>
+                    <div class="case__tags"><span>лендинг</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+              </li>
+              </ul>
+            <div class="project__footer">
+              <button class="project__more" type="button" aria-expanded="false">Показать больше</button>
+            </div>
+          </article>
+
+          <article class="project" id="megamarket">
+            <div class="project__head">
+              <h2 class="project__title">Мегамаркет</h2>
+              <div class="project__meta">
+                <p class="project__desc">
+                  Вела такие проекты, как:&nbsp;Услуги и&nbsp;цифровые товары, Доставка от&nbsp;2&nbsp;часов, раздел SEO-статей, система email-рассылок для&nbsp;B2B и&nbsp;B2C. Создавала внутренние страницы маркетплейса, работала с&nbsp;промо, участвовала в&nbsp;федеральных кампаниях
+                </p>
+                <p class="project__date">октябрь 2022 — февраль 2025</p>
+              </div>
+            </div>
+            <div class="project__carousel">
+              <div class="project__carousel-track project__grid">
+              <ul class="project__page" role="group" aria-label="Страница 1">
+<li class="case case--dark-text case--baked-m" style="background:#edeaff">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-services-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-services.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Услуги и цифровые<br />товары</h3>
+                    <div class="case__tags"><span>лендинг</span><span>дизайн</span><span>графика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-services.html" aria-label="Открыть кейс «Услуги и цифровые товары»"></a>
+              </li>
+<li class="case case--dark-text case--baked-m" style="background:#ffede3">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-delivery-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-delivery.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Услуга «Доставка<br />от 2 часов»</h3>
+                    <div class="case__tags case__tags--stacked"><div class="case__tags-row"><span>веб-интерфейс</span></div><div class="case__tags-row"><span>дизайн</span><span>айдентика</span></div></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-delivery.html" aria-label="Открыть кейс «Услуга Доставка от 2 часов»"></a>
+              </li>
+<li class="case case--dark-text case--baked-m" style="background:#f8ecff">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-app-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-app.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Скачивание<br />приложения</h3>
+                    <div class="case__tags case__tags--stacked"><div class="case__tags-row"><span>веб-интерфейс</span></div><div class="case__tags-row"><span>редизайн</span><span>графика</span></div></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-app.html" aria-label="Открыть кейс «Скачивание приложения»"></a>
+              </li>
+              </ul>
+              <ul class="project__page" role="group" aria-label="Страница 2">
+<li class="case case--dark-text" style="background:#c3f598">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-seo-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-seo.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Раздел сайта<br />SEO-статей</h3>
+                    <div class="case__tags"><span>гайд</span><span>веб-интерфейс</span><span>графика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-seo.html" aria-label="Открыть кейс «Раздел сайта SEO-статей»"></a>
+              </li>
+<li class="case case--dark-text" style="background:#f8ecff">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-promocode-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-promocode.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Промокод<br />на первый заказ</h3>
+                    <div class="case__tags case__tags--stacked"><div class="case__tags-row"><span>веб-интерфейс</span></div><div class="case__tags-row"><span>редизайн</span><span>графика</span></div></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-promo.html" aria-label="Открыть кейс «Промокод на первый заказ»"></a>
+              </li>
+<li class="case case--dark-text" style="background:#deffc3">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-sberspasibo-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-sberspasibo.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Подключение<br />к СберСпасибо</h3>
+                    <div class="case__tags case__tags--stacked"><div class="case__tags-row"><span>веб-интерфейс</span></div><div class="case__tags-row"><span>дизайн</span><span>графика</span></div></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-sber.html" aria-label="Открыть кейс «Подключение к СберСпасибо»"></a>
+              </li>
+              </ul>
+              <ul class="project__page" role="group" aria-label="Страница 3">
+<li class="case case--dark-text" style="background:#f2f5f7">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-merchants-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-merchants.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Подключение<br />мерчантов</h3>
+                    <div class="case__tags"><span>веб-интерфейс</span><span>дизайн</span><span>графика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-merchants.html" aria-label="Открыть кейс «Подключение мерчантов»"></a>
+              </li>
+<li class="case case--dark-text" style="background:#eddfff">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-b2b-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-b2b.png?v=2" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Рассылки B2B</h3>
+                    <div class="case__tags"><span>гайд</span><span>шаблоны</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-b2b.html" aria-label="Открыть кейс «Рассылки B2B»"></a>
+              </li>
+<li class="case case--dark-text project__item--extra" style="background:#ffede3">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-b2c-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-b2c.png?v=4" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Рассылки B2C</h3>
+                    <div class="case__tags"><span>гайд</span><span>шаблоны</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-b2c.html" aria-label="Открыть кейс «Рассылки B2C»"></a>
+              </li>
+              </ul>
+              <ul class="project__page" role="group" aria-label="Страница 4">
+<li class="case project__item--extra" style="background:#8654cc">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-telegram-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-telegram.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Телеграм</h3>
+                    <div class="case__tags"><span>гайд</span><span>шаблоны</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-telegram.html" aria-label="Открыть кейс «Телеграм»"></a>
+              </li>
+<li class="case case--dark-text project__item--extra" style="background:#e5e2ff">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-banners-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-banners.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Баннеры для Личного<br />кабинета мерчанта</h3>
+                    <div class="case__tags"><span>гайд</span><span>шаблоны</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-banners.html" aria-label="Открыть кейс «Баннеры для Личного кабинета мерчанта»"></a>
+              </li>
+<li class="case project__item--extra" style="background:#8654cc">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-delivery-click-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-delivery-click.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Услуга «Доставка<br />по клику»</h3>
+                    <div class="case__tags"><span>айдентика</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-click.html" aria-label="Открыть кейс «Услуга Доставка по клику»"></a>
+              </li>
+              </ul>
+              <ul class="project__page" role="group" aria-label="Страница 5">
+<li class="case case--dark-text project__item--extra" style="background:#f2e5ff">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-partners-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-partners.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Партнёры Про</h3>
+                    <div class="case__tags"><span>айдентика</span><span>дизайн</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-partners.html" aria-label="Открыть кейс «Партнёры Про»"></a>
+              </li>
+<li class="case case--dark-text project__item--extra" style="background:#c3f598">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-marketplace-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-marketplace.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Уведомления<br />на маркетплейсе</h3>
+                    <div class="case__tags"><span>дизайн</span><span>графика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-marketplace.html" aria-label="Открыть кейс «Уведомления на маркетплейсе»"></a>
+              </li>
+<li class="case case--dark-text project__item--extra" style="background:#eddfff">
+                <picture><source media="(max-width: 640px)" srcset="assets/portfolio/mega-channels-m.png?v=m2" /><img class="case__bg" src="assets/portfolio/mega-channels.png" alt="" loading="lazy" /></picture>
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Графика для разных<br />каналов</h3>
+                    <div class="case__tags"><span>дизайн</span><span>графика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-channels.html" aria-label="Открыть кейс «Графика для разных каналов»"></a>
+              </li>
+              </ul>
+              </div>
+              <div class="project__dots" role="group" aria-label="Страницы кейсов">
+                <button type="button" class="project__dot is-active" aria-label="Страница 1" aria-current="true"></button>
+                <button type="button" class="project__dot" aria-label="Страница 2"></button>
+                <button type="button" class="project__dot" aria-label="Страница 3"></button>
+                <button type="button" class="project__dot" aria-label="Страница 4"></button>
+                <button type="button" class="project__dot" aria-label="Страница 5"></button>
+              </div>
+            </div>
+            <ul class="project__grid-hidden" hidden aria-hidden="true">
+<li class="case case--dark-text" hidden style="background:#ffede3">
+                <img class="case__bg" src="assets/portfolio/mega-delivery-guide.png" alt="" loading="lazy" />
+                <div class="case__body">
+                  <div class="case__copy">
+                    <h3 class="case__title">Услуга «Доставка<br />от 2 часов»</h3>
+                    <div class="case__tags"><span>гайд</span><span>айдентика</span></div>
+                  </div>
+                  <span class="case__arrow"><img src="assets/hover-arrow.svg" width="14" height="14" alt="" /></span>
+                </div>
+                <a class="case__link" href="case-mega-delivery.html#guide" aria-label="Открыть гайд кейса «Услуга Доставка от 2 часов»"></a>
+              </li>
+            </ul>
+            <div class="project__footer">
+              <button class="project__more" type="button" aria-expanded="false">Показать больше</button>
+            </div>
+          </article>
+
+          <article class="project project--alumni">
+            <ul class="alumni">
+              <li class="alumni__card" id="practicum">
+                <button class="alumni__hit" type="button" aria-expanded="false">
+                  <span class="alumni__name">Яндекс Практикум</span>
+                  <span class="alumni__meta">
+                    <span class="alumni__date">январь&nbsp;2022&nbsp;—&nbsp;январь&nbsp;2023</span>
+                    <span class="alumni__control" aria-hidden="true"><img class="alumni__control-icon alumni__control-icon--default" src="assets/control-plus.svg" width="24" height="24" alt="" /><img class="alumni__control-icon alumni__control-icon--filled" src="assets/control-plus-filled.svg" width="24" height="24" alt="" /></span>
+                  </span>
+                </button>
+                <div class="alumni__face" aria-hidden="true">
+                  <img
+                    class="alumni__logo alumni__logo--practicum"
+                    src="assets/logos/practicum.png"
+                    width="227"
+                    height="33"
+                    alt=""
+                  />
+                  <p class="alumni__date alumni__date--desk">январь&nbsp;2022&nbsp;—&nbsp;январь&nbsp;2023</p>
+                </div>
+                <p class="alumni__text">
+                  Преподавала на&nbsp;курсе «Графический дизайнер». Проводила ревью на&nbsp;курсе «Графический дизайнер» и&nbsp;«Коммуникационный дизайнер»
+                </p>
+              </li>
+              <li class="alumni__card" id="citilink">
+                <button class="alumni__hit" type="button" aria-expanded="false">
+                  <span class="alumni__name">Ситилинк</span>
+                  <span class="alumni__meta">
+                    <span class="alumni__date">декабрь 2021 — июнь 2022</span>
+                    <span class="alumni__control" aria-hidden="true"><img class="alumni__control-icon alumni__control-icon--default" src="assets/control-plus.svg" width="24" height="24" alt="" /><img class="alumni__control-icon alumni__control-icon--filled" src="assets/control-plus-filled.svg" width="24" height="24" alt="" /></span>
+                  </span>
+                </button>
+                <div class="alumni__face" aria-hidden="true">
+                  <img
+                    class="alumni__logo alumni__logo--citilink"
+                    src="assets/logos/citilink-white.svg"
+                    width="205"
+                    height="40"
+                    alt=""
+                  />
+                  <p class="alumni__date alumni__date--desk">декабрь 2021 — июнь 2022</p>
+                </div>
+                <p class="alumni__text">
+                  Создавала и&nbsp;вела email-рассылки по&nbsp;нескольким направлениям: Акции Ситилинк, Вендорские, Журнал Ситилинк, Программа лояльности, Триггеры. Готовила креативы для&nbsp;сайта Ситилинк Журнал
+                </p>
+              </li>
+              <li class="alumni__card" id="thkb">
+                <button class="alumni__hit" type="button" aria-expanded="false">
+                  <span class="alumni__name">Тейковский хлопчатобумажный комбинат</span>
+                  <span class="alumni__meta">
+                    <span class="alumni__date">май 2019 — май 2021</span>
+                    <span class="alumni__control" aria-hidden="true"><img class="alumni__control-icon alumni__control-icon--default" src="assets/control-plus.svg" width="24" height="24" alt="" /><img class="alumni__control-icon alumni__control-icon--filled" src="assets/control-plus-filled.svg" width="24" height="24" alt="" /></span>
+                  </span>
+                </button>
+                <div class="alumni__face" aria-hidden="true">
+                  <img
+                    class="alumni__logo alumni__logo--thbk"
+                    src="assets/logos/thbk.svg"
+                    width="145"
+                    height="32"
+                    alt=""
+                  />
+                  <p class="alumni__date alumni__date--desk">май 2019 — май 2021</p>
+                </div>
+                <p class="alumni__text">
+                  Развивала айдентику нескольких брендов домашнего текстиля и&nbsp;одежды для&nbsp;взрослых и&nbsp;детей: Juno, Crazy Getup, Непоседа, Унисон, MiaCara, ТХБК. Готовила креативы и&nbsp;макеты для&nbsp;упаковки, рекламы, сайта компании и&nbsp;соцсетей
+                </p>
+              </li>
+              <li class="alumni__card" id="repa">
+                <button class="alumni__hit" type="button" aria-expanded="false">
+                  <span class="alumni__name">Repa-PR</span>
+                  <span class="alumni__meta">
+                    <span class="alumni__date">июнь 2018 — январь 2019</span>
+                    <span class="alumni__control" aria-hidden="true"><img class="alumni__control-icon alumni__control-icon--default" src="assets/control-plus.svg" width="24" height="24" alt="" /><img class="alumni__control-icon alumni__control-icon--filled" src="assets/control-plus-filled.svg" width="24" height="24" alt="" /></span>
+                  </span>
+                </button>
+                <div class="alumni__face" aria-hidden="true">
+                  <img
+                    class="alumni__logo alumni__logo--repa"
+                    src="assets/logos/repa.svg"
+                    width="86"
+                    height="34"
+                    alt=""
+                  />
+                  <p class="alumni__date alumni__date--desk">июнь 2018 — январь 2019</p>
+                </div>
+                <p class="alumni__text">
+                  Создавала дизайн для&nbsp;для&nbsp;мероприятий: WOW Awards 2018, JOY 2018, Девелоперская среда 2018
+                </p>
+              </li>
+              <li class="alumni__card" id="dymov">
+                <button class="alumni__hit" type="button" aria-expanded="false">
+                  <span class="alumni__name">Дымов Керамика</span>
+                  <span class="alumni__meta">
+                    <span class="alumni__date">октябрь 2016 — март 2018</span>
+                    <span class="alumni__control" aria-hidden="true"><img class="alumni__control-icon alumni__control-icon--default" src="assets/control-plus.svg" width="24" height="24" alt="" /><img class="alumni__control-icon alumni__control-icon--filled" src="assets/control-plus-filled.svg" width="24" height="24" alt="" /></span>
+                  </span>
+                </button>
+                <div class="alumni__face" aria-hidden="true">
+                  <img
+                    class="alumni__logo alumni__logo--dymov"
+                    src="assets/logos/dymov.svg"
+                    width="163"
+                    height="34"
+                    alt=""
+                  />
+                  <p class="alumni__date alumni__date--desk">октябрь 2016 — март 2018</p>
+                </div>
+                <p class="alumni__text">
+                  Работала предметным дизайнером в&nbsp;Дымов Керамике: создавала модели посуды и&nbsp;декора для&nbsp;дома и&nbsp;ресторанов (Уголёк, White Rabbit, Счастье, Булка), а&nbsp;также сувенирную продукцию для&nbsp;музеев Третьяковская галерея и&nbsp;Музеи Московского Кремля. Разрабатывала награды для&nbsp;The Art Newspaper Russia и&nbsp;Milano Grand Ball
+                </p>
+              </li>
+            </ul>
+            <div class="project__footer">
+              <a
+                class="project__more"
+                href="https://www.behance.net/svetlana_sed"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Проекты на Behance
+              </a>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=header-projects-edge-1"></script>
+  </body>
+</html>

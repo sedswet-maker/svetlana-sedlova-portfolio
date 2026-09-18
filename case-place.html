@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Хорошее место — Светлана Седлова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=place-radius-1" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="pill pill--black header__about" href="index.html">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+              <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black header__cv" href="cv.html">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+            <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main case-page case-page--place">
+        <section class="case-hero">
+          <div class="case-page__inner case-hero__inner">
+            <img
+              class="case-hero__logo"
+              src="assets/logos/yandex-business-color.svg"
+              width="183"
+              height="36"
+              alt="Яндекс Бизнес"
+            />
+            <h1 class="case-hero__title">Хорошее место</h1>
+            <ul class="case-hero__tags">
+              <li>перф</li>
+              <li>лендинг</li>
+              <li>дизайн</li>
+              <li>артдирекшен</li>
+              <li>дизайн-ревью</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-about">
+          <div class="case-page__inner case-about__inner">
+            <div class="case-about__block">
+              <h2 class="case-about__title">О проекте</h2>
+              <p class="case-about__text">
+                Ежегодно Яндекс присуждает организациям в&nbsp;Яндекс&nbsp;Картах
+                знак качества&nbsp;«Хорошее место» за&nbsp;высокий уровень
+                сервиса и&nbsp;положительные отзывы пользователей. Чтобы
+                стимулировать бизнесы запускать продвижение в&nbsp;Картах,
+                Яндекс&nbsp;Бизнес дарит промокоды тем, кто уже имеет
+                статус&nbsp;«Хорошее место» и&nbsp;тем, кто хочет его получить.
+              </p>
+            </div>
+            <div class="case-about__block">
+              <h2 class="case-about__title">Моя роль</h2>
+              <p class="case-about__text">
+                Создание концепции и&nbsp;структуры лендинга. Дизайн
+                и&nbsp;отрисовка графики, арт-дирекшен.<br />
+                Подготовка и&nbsp;передача в&nbsp;разработку, проведение
+                дизайн-ревью.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="case-work">
+          <div class="case-page__inner">
+            <div class="case-work__head">
+              <h2 class="case-work__title">Лендинг</h2>
+              <div class="case-work__chips" role="tablist" aria-label="Состояния лендинга">
+                <button
+                  class="case-work__chip case-work__chip--active"
+                  type="button"
+                  role="tab"
+                  id="tab-notyet"
+                  aria-selected="true"
+                  aria-controls="panel-notyet"
+                  data-tab="notyet"
+                >
+                  Ещё&nbsp;не&nbsp;стали «Хорошим местом»
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-already"
+                  aria-selected="false"
+                  aria-controls="panel-already"
+                  data-tab="already"
+                  tabindex="-1"
+                >
+                  Уже&nbsp;стали «Хорошим местом»
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel is-active"
+              id="panel-notyet"
+              role="tabpanel"
+              aria-labelledby="tab-notyet"
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Если&nbsp;у&nbsp;бизнеса ещё&nbsp;нет&nbsp;награды «Хорошее
+                    место», то&nbsp;ему&nbsp;очень пригодится промокод
+                    на&nbsp;скидку для&nbsp;продвижения в&nbsp;Яндекс&nbsp;Картах.
+                    Даже&nbsp;если саму награду бизнес в&nbsp;итоге
+                    не&nbsp;получит (нужно соблюсти пул&nbsp;условий),
+                    но&nbsp;продвижение в&nbsp;любом случае даст результат
+                    и&nbsp;приведёт клиентов
+                  </p>
+                </div>
+              </div>
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://business.yandex.ru/goodplace/promogood15"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups">
+                <div class="case-mockups__desktop">
+                  <img
+                    src="assets/cases/place/notyet-desktop-1x.jpg?v=swap-2"
+                    width="932"
+                    height="4096"
+                    alt="Лендинг «Хорошее место» — ещё не стали хорошим местом, десктопная версия"
+                  />
+                </div>
+                <div class="case-mockups__mobile">
+                  <img
+                    src="assets/cases/place/notyet-mobile-1x.jpg?v=swap-2"
+                    width="236"
+                    height="3454"
+                    alt="Лендинг «Хорошее место» — ещё не стали хорошим местом, мобильная версия"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-already"
+              role="tabpanel"
+              aria-labelledby="tab-already"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Если&nbsp;у&nbsp;бизнеса есть&nbsp;награда «Хорошее место»,
+                    то&nbsp;Яндекс&nbsp;Бизнес оказывает поддержку, чтобы
+                    продвижение в&nbsp;Картах было более доступным
+                  </p>
+                </div>
+              </div>
+              <div class="case-work__actions">
+                <a
+                  class="case-work__button"
+                  href="https://business.yandex.ru/goodplace/promo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Перейти на&nbsp;лендинг</a
+                >
+              </div>
+
+              <div class="case-mockups">
+                <div class="case-mockups__desktop">
+                  <img
+                    src="assets/cases/place/already-desktop-1x.jpg?v=swap-2"
+                    width="937"
+                    height="4096"
+                    alt="Лендинг «Хорошее место» — уже стали хорошим местом, десктопная версия"
+                  />
+                </div>
+                <div class="case-mockups__mobile">
+                  <img
+                    src="assets/cases/place/already-mobile-1x.jpg?v=swap-2"
+                    width="236"
+                    height="3112"
+                    alt="Лендинг «Хорошее место» — уже стали хорошим местом, мобильная версия"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=place-mobile-1"></script>
+  </body>
+</html>

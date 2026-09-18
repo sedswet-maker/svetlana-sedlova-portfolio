@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Баннеры для Личного кабинета мерчанта — Светлана Седлова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=header-compact-1" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="pill pill--black header__about" href="index.html">Главная</a>
+
+        <button
+          class="pill pill--black header__portfolio"
+          type="button"
+          aria-expanded="false"
+          aria-controls="portfolio-dropdown"
+          hidden
+        >
+          Портфолио
+        </button>
+
+        <nav class="portfolio-nav" aria-label="Портфолио">
+          <div class="portfolio-track" id="portfolio-track">
+            <div class="portfolio-strip" id="portfolio-strip">
+              <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+              <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+              <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+              <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+              <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+              <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+              <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+            </div>
+          </div>
+          <button
+            class="pill-icon"
+            type="button"
+            id="portfolio-next"
+            aria-label="Прокрутить проекты"
+          >
+            <img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="" />
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <a class="pill pill--black header__cv" href="cv.html">CV</a>
+          <a class="pill pill--black header__contacts" href="#contacts">Контакты</a>
+        </div>
+        <div class="header__dropdown" id="portfolio-dropdown" hidden>
+          <nav class="header__dropdown-nav" aria-label="Компании">
+            <a class="pill pill--black" href="index.html#yandex-ads">Яндекс Реклама</a>
+            <a class="pill pill--violet" href="index.html#megamarket">Мегамаркет</a>
+            <a class="pill pill--orange" href="index.html#citilink">Ситилинк</a>
+            <a class="pill pill--teal" href="index.html#thkb">ТХКБ</a>
+            <a class="pill pill--black" href="index.html#practicum">Яндекс Практикум</a>
+            <a class="pill pill--sky" href="index.html#repa">Repa PR</a>
+            <a class="pill pill--red" href="index.html#dymov">Дымов Керамика</a>
+          </nav>
+        </div>
+
+      </header>
+
+      <main class="main case-page case-page--mega case-page--mega-banners">
+        <section class="case-hero">
+          <div class="case-page__inner case-hero__inner">
+            <img
+              class="case-hero__logo"
+              src="assets/logos/megamarket.svg"
+              width="281"
+              height="36"
+              alt="мегамаркет"
+            />
+            <h1 class="case-hero__title">
+              Баннеры для&nbsp;Личного кабинета<br />мерчанта
+            </h1>
+            <ul class="case-hero__tags">
+              <li>гайды</li>
+              <li>шаблоны</li>
+              <li>дизайн</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-about">
+          <div class="case-page__inner case-about__inner">
+            <div class="case-about__block">
+              <h2 class="case-about__title">О проекте</h2>
+              <p class="case-about__text">
+                Шаблоны и&nbsp;гайд для&nbsp;баннеров Личного кабинета мерчанта были
+                созданы с&nbsp;целью приведения их&nbsp;к&nbsp;единому виду
+                и&nbsp;упрощения работы дизайнеров.
+              </p>
+            </div>
+            <div class="case-about__block">
+              <h2 class="case-about__title">Моя роль</h2>
+              <p class="case-about__text">
+                Проведение анализа текущих баннеров, уточнение потребностей заказчиков
+                по&nbsp;размещению контента в&nbsp;них.<br />
+                Основываясь на&nbsp;собранной информации были созданы шаблоны баннеров,
+                отрисованы примеры для&nbsp;них и&nbsp;собран гайд.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-work">
+          <div class="case-page__inner">
+            <div class="case-work__head">
+              <h2 class="case-work__title">Шаблоны</h2>
+              <div class="case-work__chips" role="tablist" aria-label="Шаблоны">
+                <button
+                  class="case-work__chip case-work__chip--active"
+                  type="button"
+                  role="tab"
+                  id="tab-vertical"
+                  aria-selected="true"
+                  aria-controls="panel-vertical"
+                  data-tab="vertical"
+                >
+                  Вертикальный баннер
+                </button>
+                <button
+                  class="case-work__chip"
+                  type="button"
+                  role="tab"
+                  id="tab-horizontal"
+                  aria-selected="false"
+                  aria-controls="panel-horizontal"
+                  data-tab="horizontal"
+                  tabindex="-1"
+                >
+                  Горизонтальный баннер
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel is-active"
+              id="panel-vertical"
+              role="tabpanel"
+              aria-labelledby="tab-vertical"
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Баннер размещается на&nbsp;главной странице Личного кабинета и&nbsp;обязательно
+                    должен содержать: текстовый блок и&nbsp;картинку.<br />
+                    Опционально на&nbsp;баннере ставят: плашки для&nbsp;обозначения времени
+                    вебинара, лого и&nbsp;дисклеймер.<br />
+                    Пагинация накладывается в&nbsp;самом интерфейсе.
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack case-mockups-stack--banners-grid">
+                <img
+                  src="assets/cases/mega-banners/vertical-example-1-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-1-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: Выгоды подключения к категории Fashion"
+                />
+                <img
+                  src="assets/cases/mega-banners/vertical-example-2-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-2-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: Отчётный вечер"
+                />
+                <img
+                  src="assets/cases/mega-banners/vertical-example-3-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-3-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: Получайте x2 бонусных рублей"
+                />
+                <img
+                  src="assets/cases/mega-banners/vertical-example-4-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-4-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: Добавляйте товары из каталога Мегамаркета"
+                />
+                <img
+                  src="assets/cases/mega-banners/vertical-example-5-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-5-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: x2 бонусных рублей с дисклеймером"
+                />
+                <img
+                  src="assets/cases/mega-banners/vertical-example-6-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-6-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: x2 бонусных рублей на персиковом фоне"
+                />
+                <img
+                  src="assets/cases/mega-banners/vertical-example-7-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-7-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: Взаиморасчёты Мегамаркета с продавцами"
+                />
+                <img
+                  src="assets/cases/mega-banners/vertical-example-8-1x.png"
+                  srcset="assets/cases/mega-banners/vertical-example-8-2x.png 2x"
+                  width="274"
+                  height="400"
+                  alt="Вертикальный баннер: Особенности финансового учёта и работа с 1С"
+                />
+              </div>
+
+              <div class="case-place">
+                <h3 class="case-extra__title">Место баннера</h3>
+                <div class="case-extra__images">
+                  <img
+                    src="assets/cases/mega-banners/vertical-place-1x.png?v=3"
+                    srcset="assets/cases/mega-banners/vertical-place-2x.png?v=3 2x"
+                    width="1260"
+                    height="584"
+                    alt="Вертикальный баннер в интерфейсе главной страницы Личного кабинета мерчанта"
+                  />
+                </div>
+              </div>
+
+              <div class="case-extra">
+                <div class="case-extra__block">
+                  <h3 class="case-extra__title">7 шаблонов</h3>
+                  <div class="case-work__text">
+                    <p>
+                      Для&nbsp;гибкости работы с&nbsp;контентом создано несколько шаблонов
+                      баннеров. В&nbsp;шаблонах можно скрыть опциональные элементы
+                    </p>
+                  </div>
+                  <div class="case-extra__images case-extra__images--banners-grid">
+                    <img
+                      src="assets/cases/mega-banners/vertical-template-1-1x.png"
+                      srcset="assets/cases/mega-banners/vertical-template-1-2x.png 2x"
+                      width="274"
+                      height="400"
+                      alt="Шаблон вертикального баннера: заголовок 1–3 строки с дисклеймером"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/cases/mega-banners/vertical-template-2-1x.png"
+                      srcset="assets/cases/mega-banners/vertical-template-2-2x.png 2x"
+                      width="274"
+                      height="400"
+                      alt="Шаблон вертикального баннера: заголовок 1–2 строки с дисклеймером"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/cases/mega-banners/vertical-template-3-1x.png"
+                      srcset="assets/cases/mega-banners/vertical-template-3-2x.png 2x"
+                      width="274"
+                      height="400"
+                      alt="Шаблон вертикального баннера: с датой и временем, дисклеймер"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/cases/mega-banners/vertical-template-4-1x.png"
+                      srcset="assets/cases/mega-banners/vertical-template-4-2x.png 2x"
+                      width="274"
+                      height="400"
+                      alt="Шаблон вертикального баннера: дата, длинный заголовок, дисклеймер"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/cases/mega-banners/vertical-template-5-1x.png"
+                      srcset="assets/cases/mega-banners/vertical-template-5-2x.png 2x"
+                      width="274"
+                      height="400"
+                      alt="Шаблон вертикального баннера без дисклеймера: заголовок 1–3 строки"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/cases/mega-banners/vertical-template-6-1x.png"
+                      srcset="assets/cases/mega-banners/vertical-template-6-2x.png 2x"
+                      width="274"
+                      height="400"
+                      alt="Шаблон вертикального баннера без дисклеймера: заголовок 1–2 строки"
+                      loading="lazy"
+                    />
+                    <img
+                      src="assets/cases/mega-banners/vertical-template-7-1x.png"
+                      srcset="assets/cases/mega-banners/vertical-template-7-2x.png 2x"
+                      width="274"
+                      height="400"
+                      alt="Шаблон вертикального баннера без дисклеймера: с датой и временем"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="case-extra__block">
+                  <h3 class="case-extra__title">Мини-гайд баннера 274х400px</h3>
+                  <div class="case-work__text">
+                    <p>
+                      В&nbsp;гайде описаны характеристики и&nbsp;возможное поведение всех
+                      элементов
+                    </p>
+                  </div>
+                  <div class="case-extra__images case-extra__images--guide">
+                    <img
+                      class="case-extra__images--guide-grid"
+                      src="assets/cases/mega-banners/vertical-guide-grid-1x.png?v=1"
+                      srcset="assets/cases/mega-banners/vertical-guide-grid-2x.png?v=1 2x"
+                      width="300"
+                      height="843"
+                      alt="Сетка вертикального баннера 274×400 с охранными зонами и подписями отступов"
+                      loading="lazy"
+                    />
+                    <div class="case-extra__images--guide-tables">
+                      <img
+                        src="assets/cases/mega-banners/vertical-guide-table-1-1x.png?v=5"
+                        srcset="assets/cases/mega-banners/vertical-guide-table-1-2x.png?v=5 2x"
+                        width="302"
+                        height="796"
+                        alt="Мини-гайд: технические параметры вертикального баннера"
+                        loading="lazy"
+                      />
+                      <img
+                        src="assets/cases/mega-banners/vertical-guide-table-2-1x.png?v=5"
+                        srcset="assets/cases/mega-banners/vertical-guide-table-2-2x.png?v=5 2x"
+                        width="302"
+                        height="708"
+                        alt="Мини-гайд: правила для изображения и логотипа"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="case-work__panel"
+              id="panel-horizontal"
+              role="tabpanel"
+              aria-labelledby="tab-horizontal"
+              hidden
+            >
+              <div class="case-work__intro">
+                <div class="case-work__text">
+                  <p>
+                    Баннер размещается в&nbsp;Календаре акций Личного кабинета и&nbsp;обязательно
+                    должен содержать: текстовый блок и&nbsp;картинку.<br />
+                    Опционально на&nbsp;баннере ставят: плашки для&nbsp;обозначения времени
+                    вебинара, лого, дисклеймер и&nbsp;кнопку.<br />
+                    Пагинация накладывается в&nbsp;самом интерфейсе. Также необходимо
+                    подготовить формат 1100x124px для&nbsp;адаптивности.
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-mockups-stack case-mockups-stack--horizontal-examples">
+                <div class="case-mockups-stack__pair">
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-1-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-1-2x.png 2x"
+                    width="1260"
+                    height="116"
+                    alt="Горизонтальный баннер 1345×124: Взаиморасчёты с Мегамаркетом"
+                  />
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-2-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-2-2x.png 2x"
+                    width="1030"
+                    height="116"
+                    alt="Горизонтальный баннер 1100×124: Взаиморасчёты с Мегамаркетом"
+                  />
+                </div>
+                <div class="case-mockups-stack__pair">
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-3-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-3-2x.png 2x"
+                    width="1260"
+                    height="116"
+                    alt="Горизонтальный баннер 1345×124: Получайте х2 бонусных рублей"
+                  />
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-4-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-4-2x.png 2x"
+                    width="1030"
+                    height="116"
+                    alt="Горизонтальный баннер 1100×124: Получайте х2 бонусных рублей"
+                  />
+                </div>
+                <div class="case-mockups-stack__pair">
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-5-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-5-2x.png 2x"
+                    width="1260"
+                    height="116"
+                    alt="Горизонтальный баннер 1345×124: Добавляйте товары из каталога Мегамаркета"
+                  />
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-6-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-6-2x.png 2x"
+                    width="1030"
+                    height="116"
+                    alt="Горизонтальный баннер 1100×124: Добавляйте товары из каталога Мегамаркета"
+                  />
+                </div>
+                <div class="case-mockups-stack__pair">
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-7-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-7-2x.png 2x"
+                    width="1260"
+                    height="116"
+                    alt="Горизонтальный баннер 1345×124: Подготовься к сезону распродаж"
+                  />
+                  <img
+                    src="assets/cases/mega-banners/horizontal-example-8-1x.png"
+                    srcset="assets/cases/mega-banners/horizontal-example-8-2x.png 2x"
+                    width="1030"
+                    height="116"
+                    alt="Горизонтальный баннер 1100×124: Подготовься к сезону распродаж"
+                  />
+                </div>
+              </div>
+
+              <div class="case-place">
+                <h3 class="case-extra__title">Место баннера</h3>
+                <div class="case-extra__images">
+                  <img
+                    src="assets/cases/mega-banners/horizontal-place-1x.png?v=3"
+                    srcset="assets/cases/mega-banners/horizontal-place-2x.png?v=3 2x"
+                    width="1260"
+                    height="584"
+                    alt="Горизонтальный баннер в интерфейсе календаря акций Личного кабинета"
+                  />
+                </div>
+              </div>
+
+              <div class="case-extra">
+                <div class="case-extra__block">
+                  <h3 class="case-extra__title">4 шаблона</h3>
+                  <div class="case-work__text">
+                    <p>
+                      Для&nbsp;гибкости работы с&nbsp;контентом создано несколько шаблонов
+                      баннеров. В&nbsp;шаблонах можно скрыть опциональные элементы
+                    </p>
+                  </div>
+                  <div class="case-extra__images case-extra__images--horizontal-templates">
+                    <div class="case-mockups-stack__pair">
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-1-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-1-2x.png 2x"
+                        width="1260"
+                        height="116"
+                        alt="Шаблон 1345×124: заголовок, подзаголовок, лого, дисклеймер и кнопка"
+                        loading="lazy"
+                      />
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-2-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-2-2x.png 2x"
+                        width="1030"
+                        height="116"
+                        alt="Шаблон 1100×124: заголовок, подзаголовок, лого, дисклеймер и кнопка"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="case-mockups-stack__pair">
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-3-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-3-2x.png 2x"
+                        width="1260"
+                        height="116"
+                        alt="Шаблон 1345×124: заголовок вебинара с датой и кнопкой"
+                        loading="lazy"
+                      />
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-4-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-4-2x.png 2x"
+                        width="1030"
+                        height="116"
+                        alt="Шаблон 1100×124: заголовок вебинара с датой и кнопкой"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="case-mockups-stack__pair">
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-5-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-5-2x.png 2x"
+                        width="1260"
+                        height="116"
+                        alt="Шаблон 1345×124: заголовок в 1–2 строки, лого и дисклеймер"
+                        loading="lazy"
+                      />
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-6-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-6-2x.png 2x"
+                        width="1030"
+                        height="116"
+                        alt="Шаблон 1100×124: заголовок в 1–2 строки, лого и дисклеймер"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="case-mockups-stack__pair">
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-7-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-7-2x.png 2x"
+                        width="1260"
+                        height="116"
+                        alt="Шаблон 1345×124: заголовок, подзаголовок в 1–2 строки, лого и дисклеймер"
+                        loading="lazy"
+                      />
+                      <img
+                        src="assets/cases/mega-banners/horizontal-template-8-1x.png"
+                        srcset="assets/cases/mega-banners/horizontal-template-8-2x.png 2x"
+                        width="1030"
+                        height="116"
+                        alt="Шаблон 1100×124: заголовок, подзаголовок в 1–2 строки, лого и дисклеймер"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="case-extra__block">
+                  <h3 class="case-extra__title">Мини-гайд баннера 1345х124px и 1100x124px</h3>
+                  <div class="case-work__text">
+                    <p>
+                      В&nbsp;гайде описаны характеристики и&nbsp;возможное поведение всех
+                      элементов
+                    </p>
+                  </div>
+                  <div class="case-extra__images case-extra__images--guide case-extra__images--guide-h">
+                    <img
+                      class="case-extra__images--guide-grid"
+                      src="assets/cases/mega-banners/horizontal-guide-grid-1x.png?v=1"
+                      srcset="assets/cases/mega-banners/horizontal-guide-grid-2x.png?v=1 2x"
+                      width="579"
+                      height="380"
+                      alt="Сетка горизонтального баннера 1345×124 и 1100×124 с охранными зонами"
+                      loading="lazy"
+                    />
+                    <div class="case-extra__images--guide-tables">
+                      <img
+                        src="assets/cases/mega-banners/horizontal-guide-table-1-1x.png?v=1"
+                        srcset="assets/cases/mega-banners/horizontal-guide-table-1-2x.png?v=1 2x"
+                        width="300"
+                        height="763"
+                        alt="Мини-гайд: технические параметры горизонтального баннера"
+                        loading="lazy"
+                      />
+                      <img
+                        src="assets/cases/mega-banners/horizontal-guide-table-2-1x.png?v=1"
+                        srcset="assets/cases/mega-banners/horizontal-guide-table-2-2x.png?v=1 2x"
+                        width="300"
+                        height="640"
+                        alt="Мини-гайд: правила для изображения и фона горизонтального баннера"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <p class="footer__name">Седлова Светлана</p>
+        <div class="footer__contacts">
+          <a class="footer__contact" href="https://t.me/Svetlana_Sed" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-telegram-footer.svg" width="18" height="18" alt="" />
+            <span>Svetlana_Sed</span>
+          </a>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="swet.sed@yandex.ru"
+            aria-label="Скопировать почту"
+          >
+            <img src="assets/icon-email-footer.svg" width="18" height="18" alt="" />
+            <span>swet.sed@yandex.ru</span>
+          </button>
+          <button
+            class="footer__contact"
+            type="button"
+            data-copy="+7 985 167 27 76"
+            aria-label="Скопировать телефон"
+          >
+            <img src="assets/icon-phone-footer.svg" width="18" height="18" alt="" />
+            <span>+7 985 167 27 76</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=sticky-flush-1"></script>
+  </body>
+</html>

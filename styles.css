@@ -10069,17 +10069,6 @@ a.project__more {
   }
 }
 
-/* Desktop-only paging, based on the saved hero-v2 arrow navigation. */
-.hero-projects-next { display: none; }
-@media (min-width: 641px) {
-  .hero__projects {
-    flex-wrap: nowrap;
-    max-width: 100%;
-  }
-  .hero__projects .pill[hidden] { display: none; }
-  .hero__projects .hero-projects-next:not([hidden]) { display: block; }
-}
-
 /* Keep desktop header links inside their own space, clear of CV/contacts. */
 @media (min-width: 641px) {
   .portfolio-nav { overflow: hidden; }

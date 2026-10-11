@@ -18,6 +18,7 @@
   let userDir = 0;
   const hasHomeHero = Boolean(hero && ads && hero.classList.contains("hero"));
   const mobileMq = window.matchMedia("(max-width: 640px)");
+  const compactHeaderMq = window.matchMedia("(max-width: 1100px)");
 
   const isMobile = () => mobileMq.matches;
 
@@ -49,7 +50,7 @@
 
   const syncPortfolioButton = () => {
     if (!portfolioBtn) return;
-    const show = isMobile() && !header.classList.contains("header--hero");
+    const show = compactHeaderMq.matches && !header.classList.contains("header--hero");
     portfolioBtn.hidden = !show;
     if (!show) setPortfolioOpen(false);
   };
@@ -458,88 +459,54 @@
 })();
 
 (() => {
-  const track = document.getElementById("portfolio-track");
-  const strip = document.getElementById("portfolio-strip");
-  const nextBtn = document.getElementById("portfolio-next");
-  const nav = track?.closest(".portfolio-nav");
-  // Carousel (arrow paging) is opt-in via .portfolio-nav--carousel
-  if (!track || !strip || !nextBtn || !nav?.classList.contains("portfolio-nav--carousel")) {
-    return;
-  }
-
-  const pills = Array.from(strip.querySelectorAll(".pill"));
-  const pageSize = 5;
-  let offset = 0;
-  let pageWidth = 0;
-
-  const measurePageWidth = () => {
-    const pagePills = pills.slice(0, pageSize);
-    if (!pagePills.length) return 0;
-
-    const first = pagePills[0].getBoundingClientRect();
-    const last = pagePills[pagePills.length - 1].getBoundingClientRect();
-    // Floor so a subpixel of the next pill never peeks out
-    return Math.floor(last.right - first.left);
+  const track = document.getElementById('portfolio-track');
+  const strip = document.getElementById('portfolio-strip');
+  const button = document.getElementById('portfolio-next');
+  const nav = track?.closest('.portfolio-nav');
+  if (!nav || !strip || !button) return;
+  const pills = Array.from(strip.querySelectorAll('.pill'));
+  const desktop = matchMedia('(min-width: 641px)');
+  let pages = [], page = 0;
+  const show = () => {
+    pills.forEach((pill, index) => { pill.hidden = !pages[page].includes(index); });
+    const last = page === pages.length - 1;
+    button.classList.toggle('pill-icon--reversed', last);
+    button.setAttribute('aria-label', last ? 'Прокрутить проекты назад' : 'Прокрутить проекты вперёд');
   };
-
-  const maxOffset = () => Math.max(0, strip.scrollWidth - track.clientWidth);
-  const atEnd = () => offset >= maxOffset() - 1 && maxOffset() > 0;
-
-  const syncTrackWidth = () => {
-    pageWidth = measurePageWidth();
-    if (pageWidth > 0) {
-      track.style.width = `${pageWidth}px`;
-    }
-  };
-
-  const apply = () => {
-    const max = maxOffset();
-    if (offset > max) offset = max;
-    if (offset < 0) offset = 0;
-    strip.style.transform = `translateX(${-offset}px)`;
-
-    const reversed = atEnd();
-    nextBtn.classList.toggle("pill-icon--reversed", reversed);
-    nextBtn.setAttribute(
-      "aria-label",
-      reversed ? "Прокрутить проекты назад" : "Прокрутить проекты вперёд"
-    );
-  };
-
   const layout = () => {
-    // Reset transform before measuring natural pill positions
-    strip.style.transition = "none";
-    strip.style.transform = "translateX(0)";
-    offset = 0;
-    syncTrackWidth();
-    // Force reflow, then restore transition
-    void strip.offsetWidth;
-    strip.style.transition = "";
-    apply();
+    pills.forEach(pill => { pill.hidden = false; });
+    button.hidden = true;
+    page = 0;
+    if (!desktop.matches || !nav.clientWidth) return;
+    const widths = pills.map(pill => pill.getBoundingClientRect().width);
+    const gap = parseFloat(getComputedStyle(strip).columnGap) || 0;
+    const total = widths.reduce((a, b) => a + b, 0) + gap * (widths.length - 1);
+    if (total <= nav.clientWidth + 0.5) return;
+    const capacity = nav.clientWidth - 40 - (parseFloat(getComputedStyle(nav).columnGap) || 0);
+    pages = [[]];
+    let used = 0;
+    widths.forEach((width, index) => {
+      let current = pages[pages.length - 1];
+      if (current.length && used + gap + width > capacity) {
+        pages.push([]);
+        current = pages[pages.length - 1];
+        used = 0;
+      }
+      used += (current.length ? gap : 0) + width;
+      current.push(index);
+    });
+    button.hidden = false;
+    show();
   };
-
-  nextBtn.addEventListener("click", () => {
-    const max = maxOffset();
-    if (max <= 0) return;
-
-    const step = pageWidth || track.clientWidth;
-    if (atEnd()) {
-      offset = 0;
-    } else {
-      offset = Math.min(offset + step, max);
-    }
-    apply();
+  button.addEventListener('click', () => {
+    if (!pages.length) return;
+    page = (page + 1) % pages.length;
+    show();
   });
-
-  window.addEventListener("resize", layout);
-
-  // Measure once, after the real font is active, so the nav never
-  // has to visibly resize a second time when Inter swaps in.
-  if (document.fonts?.ready) {
-    document.fonts.ready.then(layout).catch(layout);
-  } else {
-    layout();
-  }
+  new ResizeObserver(layout).observe(nav);
+  window.addEventListener('resize', layout);
+  document.fonts?.ready.then(layout);
+  layout();
 })();
 
 (() => {
@@ -818,4 +785,60 @@
   window.addEventListener("resize", syncAll);
   mobileMq.addEventListener("change", syncAll);
   syncAll();
+})();
+// Keep mobile markup and wrapping intact; page whole pills only on desktop.
+(() => {
+  const nav = document.querySelector('.hero__projects');
+  if (!nav) return;
+  const pills = Array.from(nav.querySelectorAll('.pill'));
+  const desktop = window.matchMedia('(min-width: 641px)');
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'pill-icon hero-projects-next';
+  button.hidden = true;
+  button.innerHTML = '<img src="assets/arrow-next.svg?v=2" width="40" height="40" alt="">';
+  nav.append(button);
+  let pages = [];
+  let page = 0;
+
+  const showPage = () => {
+    const visible = pages[page];
+    pills.forEach((pill, index) => { pill.hidden = !visible.includes(index); });
+    const last = page === pages.length - 1;
+    button.classList.toggle('pill-icon--reversed', last);
+    button.setAttribute('aria-label', last ? 'Прокрутить проекты назад' : 'Прокрутить проекты вперёд');
+  };
+
+  const layout = () => {
+    pills.forEach(pill => { pill.hidden = false; });
+    button.hidden = true;
+    page = 0;
+    if (!desktop.matches) return;
+    const gap = parseFloat(getComputedStyle(nav).columnGap) || 0;
+    const widths = pills.map(pill => pill.getBoundingClientRect().width);
+    const available = nav.clientWidth;
+    if (widths.reduce((sum, width) => sum + width, 0) + gap * (pills.length - 1) <= available + 0.5) return;
+    const capacity = available - 40 - gap;
+    pages = [[]];
+    let used = 0;
+    widths.forEach((width, index) => {
+      let current = pages[pages.length - 1];
+      if (current.length && used + gap + width > capacity) {
+        pages.push([]);
+        current = pages[pages.length - 1];
+        used = 0;
+      }
+      used += (current.length ? gap : 0) + width;
+      current.push(index);
+    });
+    button.hidden = false;
+    showPage();
+  };
+  button.addEventListener('click', () => {
+    page = (page + 1) % pages.length;
+    showPage();
+  });
+  window.addEventListener('resize', layout);
+  document.fonts?.ready.then(layout);
+  layout();
 })();

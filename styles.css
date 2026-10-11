@@ -397,6 +397,8 @@ button:focus-visible {
   transform: translateY(-50px);
 }
 
+
+
 .hero__profile {
   display: flex;
   flex-direction: column;
@@ -3849,7 +3851,7 @@ a.project__more {
   }
 
   .case-page--mega-app .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-app .case-work__head,
@@ -3862,12 +3864,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-app .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-app .case-work__head.is-pinned .case-work__title {
@@ -4029,7 +4031,7 @@ a.project__more {
   }
 
   .case-page--mega-promo .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-promo .case-work__head,
@@ -4042,12 +4044,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-promo .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-promo .case-work__head.is-pinned .case-work__title {
@@ -4249,7 +4251,7 @@ a.project__more {
   }
 
   .case-page--mega-sber .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-sber .case-work__head,
@@ -4262,12 +4264,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .case-page--mega-sber .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-sber .case-work__head.is-pinned .case-work__title {
@@ -4276,7 +4278,7 @@ a.project__more {
   }
 
   .case-page--mega-sber .case-work__title {
-    margin-bottom: 24px;
+    margin-bottom: 0;
     font-size: 32px;
     font-weight: 700;
     line-height: 1.4;
@@ -4371,7 +4373,7 @@ a.project__more {
   border-radius: 20px;
 }
 
-.case-page--mega-merchants .case-extra__title {
+.case-page--mega.case-page--mega-merchants .case-extra__title {
   line-height: 1.2;
 }
 
@@ -4402,6 +4404,11 @@ a.project__more {
     font-size: 32px;
     font-weight: 700;
     line-height: normal;
+  }
+
+  .case-page--mega-merchants .case-hero__br-desktop,
+  .case-page--mega-merchants .case-hero__line-desktop {
+    display: none;
   }
 
   .case-page--mega-merchants .case-hero__tags {
@@ -4441,7 +4448,7 @@ a.project__more {
   }
 
   .case-page--mega-merchants .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-merchants .case-work__head,
@@ -4454,12 +4461,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .case-page--mega-merchants .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-merchants .case-work__head.is-pinned .case-work__title {
@@ -4468,7 +4475,7 @@ a.project__more {
   }
 
   .case-page--mega-merchants .case-work__title {
-    margin-bottom: 24px;
+    margin-bottom: 0;
     font-size: 32px;
     font-weight: 700;
     line-height: 1.4;
@@ -4537,10 +4544,10 @@ a.project__more {
   }
 
   .case-page--mega-merchants .case-extra--white {
-    padding: 40px 16px;
+    padding: 24px 16px 40px;
   }
 
-  .case-page--mega-merchants .case-extra__title {
+  .case-page--mega.case-page--mega-merchants .case-extra__title {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
@@ -4550,6 +4557,10 @@ a.project__more {
 
 .case-page--mega-services {
   --case-dark: #edeaff;
+}
+
+.case-page--mega-services .case-about__block {
+  gap: 12px;
 }
 
 .case-page--mega-services .case-hero {
@@ -5436,7 +5447,7 @@ a.project__more {
   }
 
   .case-page--mega-delivery .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-delivery .case-work__head,
@@ -5449,12 +5460,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-delivery .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-delivery .case-work__head.is-pinned .case-work__title {
@@ -5642,8 +5653,12 @@ a.project__more {
   outline-color: #8654cc;
 }
 
+.case-page--mega-seo .case-about__block {
+  gap: 12px;
+}
+
 .case-page--mega-seo .case-about__text + .case-about__text {
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .case-page--mega-seo .case-extra__title {
@@ -5813,11 +5828,11 @@ a.project__more {
   }
 
   .case-page--mega-seo .case-about__text + .case-about__text {
-    margin-top: 12px;
+    margin-top: 0;
   }
 
   .case-page--mega-seo .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-seo .case-work__head,
@@ -5830,12 +5845,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-seo .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-seo .case-work__head.is-pinned .case-work__title {
@@ -5910,6 +5925,10 @@ a.project__more {
     padding-bottom: 40px;
   }
 
+  .case-page--mega-seo .seo-pages__item:last-child {
+    padding-bottom: 0;
+  }
+
   .case-page--mega-seo .seo-pages__label {
     gap: 6.56px;
     min-height: 18px;
@@ -5949,11 +5968,15 @@ a.project__more {
     padding-bottom: 40px;
   }
 
-  .case-page--mega-seo .case-extra__title {
+  .case-page--mega-seo .case-extra:last-child {
+    padding-bottom: 0;
+  }
+
+  .case-page--mega.case-page--mega-seo .case-extra__title {
     margin-bottom: 24px;
     font-size: 24px;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.2;
     letter-spacing: -0.01em;
   }
 
@@ -5993,8 +6016,12 @@ a.project__more {
   outline-color: var(--white);
 }
 
+.case-page--mega-b2c .case-about__block {
+  gap: 12px;
+}
+
 .case-page--mega-b2c .case-about__text + .case-about__text {
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .case-page--mega-b2c .case-work__intro {
@@ -6245,11 +6272,11 @@ a.project__more {
   }
 
   .case-page--mega-b2c .case-about__text + .case-about__text {
-    margin-top: 12px;
+    margin-top: 0;
   }
 
   .case-page--mega-b2c .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-b2c .case-work__head,
@@ -6262,12 +6289,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-b2c .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-b2c .case-work__head.is-pinned .case-work__title {
@@ -6361,8 +6388,12 @@ a.project__more {
   --case-accent: #c3f598;
 }
 
+.case-page--mega-b2b .case-about__block {
+  gap: 12px;
+}
+
 .case-page--mega-b2b .case-about__text + .case-about__text {
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .case-page--mega-b2b .case-work__head {
@@ -6380,25 +6411,18 @@ a.project__more {
 
 .case-page--mega-b2b .b2b-template {
   position: relative;
-  width: min(100%, 1160px);
+  width: min(100%, 656px);
   margin: 0;
 }
 
 .case-page--mega-b2b .b2b-template > img {
   display: block;
-  width: calc(600 / 1160 * 100%);
+  width: 100%;
   height: auto;
 }
 
 .case-page--mega-b2b .b2b-template__notes {
-  position: absolute;
-  left: calc(649.25 / 1160 * 100%);
-  top: 0;
-  width: calc(352.39 / 1160 * 100%);
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: none;
 }
 
 .case-page--mega-b2b .b2b-template__note {
@@ -6552,11 +6576,11 @@ a.project__more {
   }
 
   .case-page--mega-b2b .case-about__text + .case-about__text {
-    margin-top: 12px;
+    margin-top: 0;
   }
 
   .case-page--mega-b2b .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-b2b .case-work__head,
@@ -6569,12 +6593,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-b2b .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-b2b .case-work__head.is-pinned .case-work__title {
@@ -6638,8 +6662,8 @@ a.project__more {
   .case-page--mega-b2b .b2b-template {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 36.208px;
-    background: #f1f1f1;
+    padding: 0;
+    background: transparent;
   }
 
   .case-page--mega-b2b .b2b-template > img {
@@ -6841,7 +6865,7 @@ a.project__more {
   }
 
   .case-page--mega-telegram .case-work {
-    padding: 24px 16px 0;
+    padding: 0 16px 0;
   }
 
   .case-page--mega-telegram .case-work__head,
@@ -6854,12 +6878,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-telegram .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-telegram .case-work__head.is-pinned .case-work__title {
@@ -6919,7 +6943,7 @@ a.project__more {
 
   .case-page--mega-telegram .case-extra {
     margin: 0 calc(50% - 50vw);
-    padding: 40px 16px;
+    padding: 24px 16px 40px;
   }
 
   .case-page--mega-telegram .case-extra__title {
@@ -7133,7 +7157,7 @@ a.project__more {
 }
 
 .case-page--mega-banners .case-extra__images--guide-grid {
-  width: 300px;
+  width: 328px;
   flex: 0 0 auto;
   height: auto;
 }
@@ -7257,7 +7281,7 @@ a.project__more {
   }
 
   .case-page--mega-banners .case-work {
-    padding: 24px 16px 0;
+    padding: 0 16px 0;
   }
 
   .case-page--mega-banners .case-work__head,
@@ -7270,12 +7294,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
 
   .case-page--mega-banners .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-banners .case-work__head.is-pinned .case-work__title {
@@ -7406,7 +7430,7 @@ a.project__more {
   .case-page--mega-banners .case-extra__images--guide {
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 24px;
+    gap: 0;
   }
 
   .case-page--mega-banners .case-extra__images--guide-grid,
@@ -7428,7 +7452,7 @@ a.project__more {
   }
 
   .case-page--mega-banners .case-extra__images--guide-h {
-    gap: 24px;
+    gap: 0;
   }
 }
 
@@ -7437,8 +7461,12 @@ a.project__more {
   --case-dark: #f7f1ff;
 }
 
+.case-page--mega-click .case-about__block {
+  gap: 12px;
+}
+
 .case-page--mega-click .case-about__text + .case-about__text {
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 .case-page--mega-click .case-work {
@@ -7540,11 +7568,11 @@ a.project__more {
   }
 
   .case-page--mega-click .case-about__text + .case-about__text {
-    margin-top: 12px;
+    margin-top: 0;
   }
 
   .case-page--mega-click .case-work {
-    padding: 24px 16px 0;
+    padding: 0 16px 0;
   }
 
   .case-page--mega-click .case-work__head,
@@ -7557,12 +7585,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .case-page--mega-click .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-click .case-work__head.is-pinned .case-work__title {
@@ -7571,7 +7599,7 @@ a.project__more {
   }
 
   .case-page--mega-click .case-work__title {
-    margin-bottom: 24px;
+    margin-bottom: 0;
     font-size: 32px;
     font-weight: 700;
     line-height: 1.4;
@@ -7651,7 +7679,7 @@ a.project__more {
 }
 
 .case-page--mega-partners .case-mockups-stack--fit img {
-  width: min(100%, 1193px);
+  width: min(100%, 661px);
   height: auto;
 }
 
@@ -7752,7 +7780,7 @@ a.project__more {
   }
 
   .case-page--mega-partners .case-work {
-    padding: 24px 16px 0;
+    padding: 0 16px 0;
   }
 
   .case-page--mega-partners .case-work__head,
@@ -7765,12 +7793,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .case-page--mega-partners .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-partners .case-work__head.is-pinned .case-work__title {
@@ -7779,7 +7807,7 @@ a.project__more {
   }
 
   .case-page--mega-partners .case-work__title {
-    margin-bottom: 24px;
+    margin-bottom: 0;
     font-size: 32px;
     font-weight: 700;
     line-height: 1.4;
@@ -7957,7 +7985,7 @@ a.project__more {
   }
 
   .case-page--mega-marketplace .case-work {
-    padding: 24px 16px 40px;
+    padding: 0 16px 40px;
   }
 
   .case-page--mega-marketplace .case-work__head,
@@ -7970,12 +7998,12 @@ a.project__more {
     position: sticky;
     top: var(--header-height);
     z-index: 5;
-    padding-top: 16px;
-    padding-bottom: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .case-page--mega-marketplace .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-marketplace .case-work__head.is-pinned .case-work__title {
@@ -7984,7 +8012,7 @@ a.project__more {
   }
 
   .case-page--mega-marketplace .case-work__title {
-    margin-bottom: 24px;
+    margin-bottom: 0;
     font-size: 32px;
     font-weight: 700;
     line-height: 1.4;
@@ -8252,7 +8280,7 @@ a.project__more {
   }
 
   .case-page--mega-channels .case-work {
-    padding: 24px 16px 0;
+    padding: 0 16px 0;
   }
 
   .case-page--mega-channels .case-work__head {
@@ -8260,11 +8288,11 @@ a.project__more {
     top: var(--header-height);
     z-index: 5;
     gap: 0;
-    padding: 16px 0 12px;
+    padding: 24px 0 0;
   }
 
   .case-page--mega-channels .case-work__head.is-pinned {
-    padding-top: 16px;
+    padding-top: 24px;
   }
 
   .case-page--mega-channels .case-work__head.is-pinned .case-work__title {
@@ -8297,11 +8325,11 @@ a.project__more {
   }
 
   .case-page--mega-channels .case-extra {
-    padding: 40px 0;
+    padding: 24px 0 40px;
   }
 
   .case-page--mega-channels .case-extra--white {
-    padding: 40px 16px;
+    padding: 24px 16px 40px;
   }
 
   .case-page--mega-channels .case-extra__title {
@@ -8734,19 +8762,19 @@ a.project__more {
 }
 
 .header--hidden ~ .main.case-page--mega-app .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-sber .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-promo .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-merchants .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-services .case-work__head {
@@ -8754,43 +8782,43 @@ a.project__more {
 }
 
 .header--hidden ~ .main.case-page--mega-seo .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-delivery .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-b2b .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-b2c .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-telegram .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-banners .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-partners .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-click .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-marketplace .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--mega-channels .case-work__head {
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .header--hidden ~ .main.case-page--quiz .case-work__head {
@@ -10039,4 +10067,84 @@ a.project__more {
     width: 100px;
     height: 100px;
   }
+}
+
+/* Desktop-only paging, based on the saved hero-v2 arrow navigation. */
+.hero-projects-next { display: none; }
+@media (min-width: 641px) {
+  .hero__projects {
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+  .hero__projects .pill[hidden] { display: none; }
+  .hero__projects .hero-projects-next:not([hidden]) { display: block; }
+}
+
+/* Keep desktop header links inside their own space, clear of CV/contacts. */
+@media (min-width: 641px) {
+  .portfolio-nav { overflow: hidden; }
+  .portfolio-nav .portfolio-track {
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .portfolio-nav > .pill-icon:not([hidden]) { display: block; }
+}
+
+/* Use the mobile header before desktop navigation wraps to a second row. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  /* Compact header (past hero / case / CV): Главная | Портфолио | CV */
+  .header:not(.header--hero) {
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 16px;
+    min-height: 56px;
+    box-sizing: border-box;
+  }
+
+  .header:not(.header--hero) .portfolio-nav {
+    display: none;
+  }
+
+  .header:not(.header--hero) .header__about {
+    display: inline-flex;
+    height: 24px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .header:not(.header--hero) .header__portfolio {
+    display: inline-flex;
+    height: 24px;
+    margin-left: auto;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .header:not(.header--hero) .header-actions {
+    gap: 8px;
+    margin-left: 0;
+  }
+
+  .header:not(.header--hero) .header__contacts {
+    display: none;
+  }
+
+  .header:not(.header--hero) .header__cv {
+    height: 24px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .header.is-portfolio-open .header__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex: none;
+    padding: 8px 16px 16px;
+  }
+
+
+  .header:not(.header--hero) { flex-wrap: nowrap; --header-pad-y: 16px; }
 }

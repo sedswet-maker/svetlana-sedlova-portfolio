@@ -10152,3 +10152,13 @@ a.project__more {
     .alumni__date--desk > span { flex-basis: 100%; }
   }
 }
+
+/* Scale hover copy with the card's usable width, preserving all four insets. */
+@media (min-width: 641px) {
+  .alumni__text {
+    inset: 28px;
+    padding: 0;
+    font-size: min(14px, 6cqw);
+    letter-spacing: 0.01em;
+  }
+}

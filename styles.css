@@ -10137,3 +10137,18 @@ a.project__more {
 
   .header:not(.header--hero) { flex-wrap: nowrap; --header-pad-y: 16px; }
 }
+
+/* Wrap desktop employment dates between the two month/year groups. */
+@media (min-width: 641px) {
+  .alumni__card { container-type: inline-size; }
+  .alumni__date--desk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.3em;
+  }
+  .alumni__date--desk > span { white-space: nowrap; }
+  @container (max-width: 220px) {
+    .alumni__date--desk > span { flex-basis: 100%; }
+  }
+}
